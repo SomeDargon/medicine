@@ -14,7 +14,6 @@ public class BaseEntity implements Serializable {
     private static final long serialVersionUID = 4796912106778982509L;
 
     @Id
-    @GeneratedValue(generator = "JDBC")
     private Long id;
 
     @Override

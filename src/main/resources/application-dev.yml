@@ -7,6 +7,20 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: create
+  redis:
+    port: 6379
+    host: 114.215.68.43
+    password: sVDPyKB7dvgJGANq5Mda
+    jedis:
+      pool:
+        max-active: 100
+        max-idle: 5
+        max-wait: -1
+        min-idle: 0
+    database: 0
+    timeout: 10000
+  session:
+    store-type: redis
 ########## Mybatis 自身配置 ##########
 mybatis:
   mapper-locations: classpath:mapper/*Mapper.xml

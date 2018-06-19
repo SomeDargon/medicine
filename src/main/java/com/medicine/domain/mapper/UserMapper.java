@@ -11,4 +11,5 @@ public interface UserMapper extends BaseMapper<User> {
 
     @Select("select count(*) from t_user where account = #{account}")
     int countByAccount(String account);
+
 }

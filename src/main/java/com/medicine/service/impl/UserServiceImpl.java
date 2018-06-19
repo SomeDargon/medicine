@@ -28,4 +28,14 @@ public class UserServiceImpl implements UserService {
     public int countByAccount(String account) {
         return userMapper.countByAccount(account);
     }
+
+    @Override
+    public User findUserByUserName(String name) {
+        return userRepository.findByUserName(name);
+    }
+
+    @Override
+    public User save(User user) {
+        return userRepository.save(user);
+    }
 }

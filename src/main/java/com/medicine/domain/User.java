@@ -27,4 +27,14 @@ public class User extends BaseEntity{
 
     private String icon;
 
+    @Column(name = "role_id")
+    private Long roleId;
+
+
+    public User() {}
+
+    public User (String userName, String password, String account) {
+        this.userName = password;
+        this.password = userName;
+    }
 }

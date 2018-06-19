@@ -28,6 +28,8 @@
 		<mybatis.version>2.0.2</mybatis.version>
         <pagehelper.version>1.2.5</pagehelper.version>
 		<lombda.version>1.16.18</lombda.version>
+		<fastjson.version>1.2.47</fastjson.version>
+		<springboot.version>2.0.2.RELEASE</springboot.version>
 	</properties>
 
 	<dependencies>
@@ -67,17 +69,14 @@
 			<!--<groupId>com.alibaba</groupId>-->
 			<!--<artifactId>druid-spring-boot-starter</artifactId>-->
 			<!--<version>${druid.version}</version>-->
+
 		<!--</dependency>-->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>tk.mybatis</groupId>
-			<artifactId>mapper-spring-boot-starter</artifactId>
-			<version>${mybatis.version}</version>
-		</dependency>
-		<!-- 分页插件
+			<groupId>tk.mybatis</groupId> <artifactId>mapper-spring-boot-starter</artifactId> <version>${mybatis.version}</version> </dependency> <!-- 分页插件
  文档地址：https://github.com/pagehelper/Mybatis-PageHelper/blob/master/wikis/zh/HowToUse.md -->
 		<dependency>
 			<groupId>com.github.pagehelper</groupId>
@@ -90,7 +89,31 @@
 			<version>${lombda.version}</version>
 			<scope>provided</scope>
 		</dependency>
-	</dependencies>
+
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.session</groupId>-->
+			<!--<artifactId>spring-session-data-redis</artifactId>-->
+			<!--<version>${springboot.version}</version>-->
+		<!--</dependency>-->
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+
+    </dependencies>
 
 	<build>
 		<plugins>

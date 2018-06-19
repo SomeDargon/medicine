@@ -9,4 +9,9 @@ public interface UserService {
     List<User> findAll();
 
     int countByAccount(String account);
+
+    User findUserByUserName(String name);
+
+    User save(User user);
+
 }
