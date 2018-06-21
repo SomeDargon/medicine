@@ -1,30 +1,20 @@
-2018-06-19 14:11:31 - Starting ApplicationTest on SKY-20170913ZDM with PID 10420 (started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-06-19 14:11:31 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-06-19 14:11:31 - The following profiles are active: dev
-2018-06-19 14:11:39 - Started ApplicationTest in 10.339 seconds (JVM running for 12.67)
-2018-06-19 14:11:40 - [字符缓存结果] - [v1]
-2018-06-19 14:11:40 - [对象缓存结果] - [User(userName=pa, password=u1, account=null, updateDate=null, createDate=null, icon=null)]
-2018-06-19 14:12:35 - Starting Application on SKY-20170913ZDM with PID 12284 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-06-19 14:12:35 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-06-19 14:12:36 - The following profiles are active: dev
-2018-06-19 14:12:43 - Started Application in 8.049 seconds (JVM running for 10.824)
-2018-06-19 14:15:44 - Starting Application on SKY-20170913ZDM with PID 12404 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-06-19 14:15:44 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-06-19 14:15:44 - The following profiles are active: dev
-2018-06-19 14:15:54 - Started Application in 10.522 seconds (JVM running for 11.995)
-2018-06-19 14:19:08 - Starting Application on SKY-20170913ZDM with PID 11724 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-06-19 14:19:08 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-06-19 14:19:08 - The following profiles are active: dev
-2018-06-19 14:19:17 - Started Application in 10.224 seconds (JVM running for 12.339)
-2018-06-19 14:50:45 - Starting Application on SKY-20170913ZDM with PID 10576 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-06-19 14:50:45 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-06-19 14:50:45 - The following profiles are active: dev
-2018-06-19 14:50:53 - Started Application in 9.302 seconds (JVM running for 11.495)
-2018-06-19 16:52:13 - Starting Application on SKY-20170913ZDM with PID 13156 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-06-19 16:52:13 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-06-19 16:52:13 - The following profiles are active: dev
-2018-06-19 16:52:22 - Started Application in 9.92 seconds (JVM running for 12.375)
-2018-06-19 17:09:45 - Starting Application on SKY-20170913ZDM with PID 4704 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-06-19 17:09:45 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-06-19 17:09:45 - The following profiles are active: dev
-2018-06-19 17:09:54 - Started Application in 9.942 seconds (JVM running for 11.638)
+2018-06-21 12:03:39 - Started Application in 11.751 seconds (JVM running for 13.698)
+2018-06-21 14:35:57 - Starting Application on SKY-20170913ZDM with PID 6844 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
+2018-06-21 14:35:57 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-21 14:35:57 - The following profiles are active: dev
+2018-06-21 14:36:08 - Started Application in 12.704 seconds (JVM running for 15.482)
+2018-06-21 14:39:10 - Starting Application on SKY-20170913ZDM with PID 7660 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
+2018-06-21 14:39:10 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-21 14:39:10 - The following profiles are active: dev
+2018-06-21 14:39:20 - Started Application in 10.159 seconds (JVM running for 12.137)
+2018-06-21 14:42:15 - Starting Application on SKY-20170913ZDM with PID 5076 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
+2018-06-21 14:42:15 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-21 14:42:15 - The following profiles are active: dev
+2018-06-21 14:42:25 - Started Application in 10.572 seconds (JVM running for 12.456)
+2018-06-21 14:44:01 - Starting Application on SKY-20170913ZDM with PID 7372 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
+2018-06-21 14:44:01 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-21 14:44:01 - The following profiles are active: dev
+2018-06-21 14:44:11 - Started Application in 10.93 seconds (JVM running for 13.061)
+2018-06-21 16:02:11 - Starting Application on SKY-20170913ZDM with PID 9112 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
+2018-06-21 16:02:11 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-21 16:02:11 - The following profiles are active: dev

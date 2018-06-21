@@ -52,10 +52,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     protected void configure(HttpSecurity http) throws Exception {
-        http.formLogin().loginProcessingUrl("/user/login/").and()
-                .csrf().disable().authorizeRequests()
-                .anyRequest().fullyAuthenticated()
-                .and()
+        http.formLogin().loginProcessingUrl("user/login/").and()
+                .csrf().and()
                 .addFilter(new WebAsyncManagerIntegrationFilter())
                 .exceptionHandling().and()
                 .headers().and()

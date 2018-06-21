@@ -1,7 +1,7 @@
 package com.medicine.web;
 
 import com.medicine.domain.User;
-import com.medicine.domain.form.UserForm;
+import com.medicine.domain.from.UserForm;
 import com.medicine.service.UserService;
 import com.medicine.util.JsonResult;
 import io.swagger.annotations.Api;
@@ -19,7 +19,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/user")
-@Api(value = "用户常用接口类")
+@Api(value = "用户常用接口类", description = "用户登录接口")
 public class UserController {
 
     @Autowired
