@@ -1,8 +1,13 @@
 package com.medicine.domain.from.dome;
 
+import com.medicine.domain.attiendRecode.DiagnosisAndtreatment;
+import com.medicine.domain.attiendRecode.Medicine;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import org.springframework.beans.BeanUtils;
+
+import java.util.List;
 
 @Data
 @ApiModel(value = "诊断治疗")
@@ -42,6 +47,21 @@ public class DiagnosisAndtreatmentFrom {
     private String orther;
 
     @ApiModelProperty(value = "处方详情")
-    private MedicineFrom medicine;
+    private List<MedicineFrom> medicine;
+
+
+    public static DiagnosisAndtreatment
+    dFromToD(DiagnosisAndtreatmentFrom diagnosisAndtreatmentFrom) {
+       DiagnosisAndtreatment diagnosisAndtreatment =
+                                new DiagnosisAndtreatment();
+       BeanUtils.copyProperties(diagnosisAndtreatmentFrom, diagnosisAndtreatment);
+       diagnosisAndtreatment.setMedicine(
+               MedicineFrom.medicineFormTomedicine(
+                       diagnosisAndtreatmentFrom.getMedicine(),
+                       diagnosisAndtreatment
+               )
+       );
+       return diagnosisAndtreatment;
+    }
 
 }

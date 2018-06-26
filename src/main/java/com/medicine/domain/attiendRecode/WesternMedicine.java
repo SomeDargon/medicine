@@ -17,15 +17,13 @@ public class WesternMedicine extends BaseEntity {
 
     private String text;
 
-    private Integer type;
+    private String name;
 
-    @OneToMany(mappedBy = "western", fetch = FetchType.LAZY)
-    private List<Image> image;
+    @OneToMany(mappedBy = "western", cascade = CascadeType.ALL)
+    private List<Image> img;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "dOfWe_id")
     private DiagnosisOfWe dOfWe;
 
-    @OneToOne(mappedBy = "shezhenimg")
-    private DiagnosisOfZh dOfZh;
 }

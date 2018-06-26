@@ -13,7 +13,7 @@ import java.util.Date;
 @Data
 @Table(name = "t_user")
 @Entity
-public class User extends BaseEntity implements UserDetails{
+public class User extends BaseEntity  {
 
     @Column(name = "user_name")
     private String userName;
@@ -39,35 +39,63 @@ public class User extends BaseEntity implements UserDetails{
     public User (String userName, String password, String account) {
         this.userName = password;
         this.password = userName;
+        this.account = account;
     }
 
-    @Override
-    public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
+    public String getUserName() {
+        return userName;
     }
 
-    @Override
-    public String getUsername() {
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getAccount() {
         return account;
     }
 
-    @Override
-    public boolean isAccountNonExpired() {
-        return true;
+    public void setAccount(String account) {
+        this.account = account;
     }
 
-    @Override
-    public boolean isAccountNonLocked() {
-        return true;
+    public Date getUpdateDate() {
+        return updateDate;
     }
 
-    @Override
-    public boolean isCredentialsNonExpired() {
-        return true;
+    public void setUpdateDate(Date updateDate) {
+        this.updateDate = updateDate;
     }
 
-    @Override
-    public boolean isEnabled() {
-        return true;
+    public Date getCreateDate() {
+        return createDate;
     }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
+    }
+
+    public String getIcon() {
+        return icon;
+    }
+
+    public void setIcon(String icon) {
+        this.icon = icon;
+    }
+
+    public Long getRoleId() {
+        return roleId;
+    }
+
+    public void setRoleId(Long roleId) {
+        this.roleId = roleId;
+    }
+
 }

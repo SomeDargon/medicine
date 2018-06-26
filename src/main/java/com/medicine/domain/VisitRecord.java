@@ -10,9 +10,13 @@ import java.util.Date;
 @Entity
 public class VisitRecord extends BaseEntity {
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "p_id")
+    private Patient patient;
+
     private Date createDate;
 
-    private Date visitTime;
+    private Integer visitTimes;
 
     // 诊断治疗
     @OneToOne(cascade = CascadeType.ALL)
@@ -34,8 +38,14 @@ public class VisitRecord extends BaseEntity {
     @JoinColumn(name = "other_id")
     private OtherMessage otherMessage;
 
-    // 处方详情
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "medicine_id")
-    private Medicine medicine;
+    @Override
+    public String toString() {
+        return "VisitRecord{" +
+                "createDate=" + createDate +
+                ", diagnosisAndtreatment=" + diagnosisAndtreatment +
+                ", diagnosisOfZh=" + diagnosisOfZh +
+                ", diagnosisOfWe=" + diagnosisOfWe +
+                ", otherMessage=" + otherMessage +
+                '}';
+    }
 }

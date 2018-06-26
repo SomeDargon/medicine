@@ -1,17 +1,15 @@
-package com.medicine.domain;
+package com.medicine.domain.dto.attiendRecode;
 
+import com.medicine.domain.Patient;
+import io.swagger.annotations.ApiModel;
 import lombok.Data;
+import org.springframework.beans.BeanUtils;
 
-import javax.persistence.*;
 import java.util.Date;
-import java.util.List;
 
-/**
- * 病人
- */
+@ApiModel("患者信息")
 @Data
-@Entity
-public class Patient extends BaseEntity {
+public class UserInfoDTO {
 
     private Long cardId;
 
@@ -33,11 +31,9 @@ public class Patient extends BaseEntity {
     // 出生地
     private String birthplace;
 
-    @Column(name = "visit_time")
     private Date visitTime;
 
     // 邮编
-    @Column(name = "zip_code")
     private String zipCode;
 
     // 婚姻 （1已婚 0未婚 3其他）
@@ -55,22 +51,9 @@ public class Patient extends BaseEntity {
     // 体重
     private Double weight;
 
-    // 身高
-    private Double height;
-
-    @Column(name = "create_date")
-    private Date createDate;
-
-    @Column(name = "update_date")
-    private Date updateDate;
-
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "patient")
-    private List<VisitRecord> visitRecords;
-
-    public Patient() {
-    }
-
-    public Patient(Long id) {
-        super.setId(id);
+    public static UserInfoDTO patientToUserInfo(Patient patient) {
+        UserInfoDTO userInfoDTO = new UserInfoDTO();
+        BeanUtils.copyProperties(patient, userInfoDTO);
+        return userInfoDTO;
     }
 }

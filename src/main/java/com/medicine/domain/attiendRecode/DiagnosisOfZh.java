@@ -2,6 +2,7 @@ package com.medicine.domain.attiendRecode;
 
 import com.medicine.domain.BaseEntity;
 import lombok.Data;
+import org.hibernate.engine.internal.Cascade;
 
 import javax.persistence.*;
 
@@ -56,9 +57,9 @@ public class DiagnosisOfZh extends BaseEntity {
     private String qinahoueryinjipaixiewu;
 
     // 舌诊图片
-    @OneToOne(cascade = {CascadeType.ALL})
     @JoinColumn(name = "shezhenimg_id")
-    private WesternMedicine shezhenimg;
+    @OneToOne(cascade = CascadeType.ALL)
+    private WesternMedicine westernMedicine;
 
     // 舌诊
     private String maizhen;

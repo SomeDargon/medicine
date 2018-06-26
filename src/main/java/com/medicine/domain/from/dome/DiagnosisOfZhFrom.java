@@ -1,8 +1,10 @@
 package com.medicine.domain.from.dome;
 
+import com.medicine.domain.attiendRecode.DiagnosisOfZh;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import org.springframework.beans.BeanUtils;
 
 @Data
 @ApiModel(value = "中医四诊")
@@ -67,5 +69,16 @@ public class DiagnosisOfZhFrom {
 
     @ApiModelProperty(value = "舌诊")
     private String shezheng;
+
+    public static DiagnosisOfZh dZhFromToD(DiagnosisOfZhFrom diagnosisOfZhFrom) {
+        DiagnosisOfZh diagnosisOfZh = new DiagnosisOfZh();
+        BeanUtils.copyProperties(diagnosisOfZhFrom, diagnosisOfZh);
+        diagnosisOfZh.setWesternMedicine(
+                WesternMedicineFrom.westerFromToWester(
+                        diagnosisOfZhFrom.getShezhenimg()
+                )
+        );
+        return diagnosisOfZh;
+    }
 
 }

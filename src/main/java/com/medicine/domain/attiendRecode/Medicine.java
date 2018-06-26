@@ -3,8 +3,7 @@ package com.medicine.domain.attiendRecode;
 import com.medicine.domain.BaseEntity;
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 
 
 /**
@@ -26,6 +25,7 @@ public class Medicine extends BaseEntity {
     // 医师
     private String yongfa;
 
-    @OneToOne(mappedBy = "medicine")
+    @ManyToOne( fetch = FetchType.LAZY)
+    @JoinColumn(name = "dat_id")
     private DiagnosisAndtreatment dat;
 }

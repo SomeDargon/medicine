@@ -7,7 +7,7 @@ import org.springframework.beans.BeanUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PatientToPatientDTOConverter {
+public class PatientToPatientDTOConverter{
 
     public static PatientDTO converter(Patient Patient) {
        PatientDTO PatientDTO = new PatientDTO();

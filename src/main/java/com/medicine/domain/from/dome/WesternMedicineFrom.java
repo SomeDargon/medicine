@@ -1,15 +1,29 @@
 package com.medicine.domain.from.dome;
 
+import com.medicine.domain.attiendRecode.DiagnosisOfZh;
 import com.medicine.domain.attiendRecode.Image;
+import com.medicine.domain.attiendRecode.WesternMedicine;
+import lombok.Data;
+import org.springframework.beans.BeanUtils;
 
+import java.util.ArrayList;
 import java.util.List;
 
+@Data
 public class WesternMedicineFrom {
+
+    private String name;
 
     private String text;
 
-    private Integer type;
+    private List<Image> img;
 
-    private List<Image> image;
-
+    public static WesternMedicine westerFromToWester(
+            WesternMedicineFrom westernMedicineFrom
+    ) {
+        WesternMedicine westernMedicine = new WesternMedicine();
+        BeanUtils.copyProperties(westernMedicineFrom, westernMedicine);
+        westernMedicine.getImg().forEach(image -> image.setWestern(westernMedicine));
+        return westernMedicine;
+    }
 }

@@ -4,6 +4,7 @@ import com.medicine.domain.BaseEntity;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.List;
 
 
 /**
@@ -11,7 +12,7 @@ import javax.persistence.*;
  */
 @Data
 @Entity
-@Table(name = "diagnosis_andtreatment")
+@Table(name = "diagnosis_and_treatment")
 public class DiagnosisAndtreatment extends BaseEntity {
 
     // 中医疾病
@@ -48,8 +49,24 @@ public class DiagnosisAndtreatment extends BaseEntity {
     private String other;
 
     // 处方详情
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "medicine_id")
-    private Medicine medicine;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "dat")
+    private List<Medicine> medicine;
 
+    @Override
+    public String toString() {
+        return "DiagnosisAndtreatment{" +
+                "zyjb='" + zyjb + '\'' +
+                ", xyjb='" + xyjb + '\'' +
+                ", zyzh='" + zyzh + '\'' +
+                ", zzzf='" + zzzf + '\'' +
+                ", zfm='" + zfm + '\'' +
+                ", type='" + type + '\'' +
+                ", number='" + number + '\'' +
+                ", doctor='" + doctor + '\'' +
+                ", medicineC='" + medicineC + '\'' +
+                ", medicineW='" + medicineW + '\'' +
+                ", other='" + other + '\'' +
+                ", medicine=" + medicine +
+                '}';
+    }
 }

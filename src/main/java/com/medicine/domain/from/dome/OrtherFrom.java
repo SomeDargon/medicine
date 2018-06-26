@@ -1,9 +1,11 @@
 package com.medicine.domain.from.dome;
 
 
+import com.medicine.domain.attiendRecode.OtherMessage;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import org.springframework.beans.BeanUtils;
 
 @Data
 @ApiModel(value = "其他信息")
@@ -35,5 +37,12 @@ public class OrtherFrom {
 
     @ApiModelProperty(value = "专家点评")
     private String  zjdp;
+
+
+    public static OtherMessage ortherFromToOtherMesage(OrtherFrom ortherFrom) {
+        OtherMessage otherMessage = new OtherMessage();
+        BeanUtils.copyProperties(ortherFrom, otherMessage);
+        return otherMessage;
+    }
 
 }

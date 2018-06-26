@@ -12,14 +12,16 @@ import lombok.Data;
 @ApiModel(value = "就诊记录")
 public class VisitRecordForm {
 
-    @ApiModelProperty(value = "中医四诊")
-    private DiagnosisOfZhFrom diagnosisOfZh;
+    private Long id;
+
+    @ApiModelProperty(value = "诊断治疗")
+    private DiagnosisAndtreatmentFrom diagnosisAndtreatment;
 
     @ApiModelProperty(value = "西医检查", notes = "其中包含很多常规检查")
     private DiagnosisOfWeFrom diagnosisOfWe;
 
-    @ApiModelProperty(value = "诊断治疗")
-    private DiagnosisAndtreatmentFrom diagnosisAndtreatment;
+    @ApiModelProperty(value = "中医四诊")
+    private DiagnosisOfZhFrom diagnosisOfZh;
 
     @ApiModelProperty(value = "其他信息")
     private OrtherFrom orther;

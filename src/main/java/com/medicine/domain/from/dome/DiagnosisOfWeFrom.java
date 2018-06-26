@@ -1,8 +1,12 @@
 package com.medicine.domain.from.dome;
 
+import com.medicine.domain.attiendRecode.DiagnosisOfWe;
+import com.medicine.domain.attiendRecode.WesternMedicine;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+
+import java.util.List;
 
 @Data
 @ApiModel(value = "西医检查")
@@ -11,33 +15,20 @@ public class DiagnosisOfWeFrom {
     @ApiModelProperty(value = "体格检查")
     private String tigejiancha;
 
-    @ApiModelProperty(value = "血常规")
-    private WesternMedicineFrom xcg;
+    @ApiModelProperty(value = "所有检查报告")
+    private List<WesternMedicine> westernMedicines;
 
-    @ApiModelProperty(value = "心电图")
-    private WesternMedicineFrom xdt;
 
-    @ApiModelProperty(value = "尿常规")
-    private WesternMedicineFrom ncg;
+    public static DiagnosisOfWe dFromToD(DiagnosisOfWeFrom diagnosisOfWeFrom) {
+        DiagnosisOfWe diagnosisOfWe = new DiagnosisOfWe();
+        diagnosisOfWe.setTigejiancha(diagnosisOfWeFrom.getTigejiancha());
+        List<WesternMedicine> westernMedicines = diagnosisOfWeFrom.getWesternMedicines();
+        westernMedicines.forEach(e -> {
+            e.setDOfWe(diagnosisOfWe);
+            e.getImg().forEach(image -> image.setWestern(e));
+        });
+        diagnosisOfWe.setWesternMedicines(westernMedicines);
+        return diagnosisOfWe;
+    }
 
-    @ApiModelProperty(value = "CT")
-    private WesternMedicineFrom CT;
-
-    @ApiModelProperty(value = "大便常规")
-    private WesternMedicineFrom dbcg;
-
-    @ApiModelProperty(value = "MRI")
-    private WesternMedicineFrom MRI;
-
-    @ApiModelProperty(value = "血生化")
-    private WesternMedicineFrom xsh;
-
-    @ApiModelProperty(value = "超声")
-    private WesternMedicineFrom cs;
-
-    @ApiModelProperty(value = "X光")
-    private WesternMedicineFrom X;
-
-    @ApiModelProperty(value = "其他")
-    private WesternMedicineFrom orther;
 }

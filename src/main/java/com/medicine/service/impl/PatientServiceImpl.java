@@ -35,4 +35,9 @@ public class PatientServiceImpl implements PatientService {
                 patientFrom.patientFormToPatient(patientFrom)
         );
     }
+
+    @Override
+    public Patient findById(Long id) {
+        return patientRepository.getOne(id);
+    }
 }

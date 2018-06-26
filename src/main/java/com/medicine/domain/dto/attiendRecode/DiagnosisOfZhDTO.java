@@ -1,0 +1,22 @@
+package com.medicine.domain.dto.attiendRecode;
+
+import com.medicine.domain.attiendRecode.WesternMedicine;
+import com.medicine.domain.dto.attiendRecode.diagnosisOfZh.AskDTO;
+import com.medicine.domain.dto.attiendRecode.diagnosisOfZh.LookDTO;
+import com.medicine.domain.dto.attiendRecode.diagnosisOfZh.WqDTO;
+import com.medicine.domain.dto.attiendRecode.diagnosisOfZh.ZhaiyaoDTO;
+import lombok.Data;
+
+@Data
+public class DiagnosisOfZhDTO {
+
+    private AskDTO ask;
+
+    private LookDTO look;
+
+    private WesternMedicine shezhenimg;
+
+    private WqDTO wq;
+
+    private ZhaiyaoDTO zhaiyao;
+}
