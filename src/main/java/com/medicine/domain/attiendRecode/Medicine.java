@@ -28,4 +28,5 @@ public class Medicine extends BaseEntity {
     @ManyToOne( fetch = FetchType.LAZY)
     @JoinColumn(name = "dat_id")
     private DiagnosisAndtreatment dat;
+
 }

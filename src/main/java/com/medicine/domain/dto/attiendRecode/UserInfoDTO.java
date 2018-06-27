@@ -51,6 +51,9 @@ public class UserInfoDTO {
     // 体重
     private Double weight;
 
+    // TODO
+    private Integer age = 10;
+
     public static UserInfoDTO patientToUserInfo(Patient patient) {
         UserInfoDTO userInfoDTO = new UserInfoDTO();
         BeanUtils.copyProperties(patient, userInfoDTO);

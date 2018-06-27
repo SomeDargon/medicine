@@ -5,10 +5,7 @@ import com.medicine.domain.attiendRecode.*;
 import com.medicine.domain.dto.VisitRecordDTO;
 import com.medicine.domain.dto.attiendRecode.DiagnosisOfWeDTO;
 import com.medicine.domain.dto.attiendRecode.DiagnosisOfZhDTO;
-import com.medicine.domain.dto.attiendRecode.diagnosisAndtreatment.CfDTO;
-import com.medicine.domain.dto.attiendRecode.diagnosisAndtreatment.DiagnosisAndtreatmentDTO;
-import com.medicine.domain.dto.attiendRecode.diagnosisAndtreatment.ZdyzlDTO;
-import com.medicine.domain.dto.attiendRecode.diagnosisAndtreatment.ZycfDTO;
+import com.medicine.domain.dto.attiendRecode.diagnosisAndtreatment.*;
 import com.medicine.domain.dto.attiendRecode.diagnosisOfZh.AskDTO;
 import com.medicine.domain.dto.attiendRecode.diagnosisOfZh.LookDTO;
 import com.medicine.domain.dto.attiendRecode.diagnosisOfZh.WqDTO;
@@ -35,16 +32,24 @@ public class VisitRcodeToVisitRecordDTOConverter{
         WqDTO wqDTO = new WqDTO();
         ZhaiyaoDTO zhaiyaoDTO = new ZhaiyaoDTO();
 
+        WesternMedicineDTO westernMedicineDTO = new WesternMedicineDTO();
+
         BeanUtils.copyProperties(diagnosisOfZh, wqDTO);
         BeanUtils.copyProperties(diagnosisOfZh, zhaiyaoDTO);
         BeanUtils.copyProperties(diagnosisOfZh, askDTO);
         BeanUtils.copyProperties(diagnosisOfZh, lookDTO);
 
+        BeanUtils.copyProperties(diagnosisOfZh.getWesternMedicine(), westernMedicineDTO);
+        List<String> images = new ArrayList<>();
+        diagnosisOfZh.getWesternMedicine().getImg().forEach(
+                img -> images.add(img.getUrl())
+        );
+        westernMedicineDTO.setImg(images);
+        lookDTO.setShezhenimg(westernMedicineDTO);
         diagnosisOfZhDTO.setAsk(askDTO);
         diagnosisOfZhDTO.setLook(lookDTO);
         diagnosisOfZhDTO.setZhaiyao(zhaiyaoDTO);
         diagnosisOfZhDTO.setWq(wqDTO);
-        diagnosisOfZhDTO.setShezhenimg(diagnosisOfZh.getWesternMedicine());
 
         visitRecordDTO.setDiagnosisOfZh(diagnosisOfZhDTO);
 
@@ -52,8 +57,15 @@ public class VisitRcodeToVisitRecordDTOConverter{
         DiagnosisOfWeDTO diagnosisOfWeDTO = new DiagnosisOfWeDTO();
         DiagnosisOfWe diagnosisOfWe = visitRecord.getDiagnosisOfWe();
         List<WesternMedicine> westernMedicines = diagnosisOfWe.getWesternMedicines();
-        westernMedicines.forEach(e -> {
-            switch (e.getName()) {
+        westernMedicines.forEach(westernMedicine -> {
+            WesternMedicineDTO e = new WesternMedicineDTO();
+            BeanUtils.copyProperties(westernMedicine, e);
+            List<String> list = new ArrayList<>();
+            westernMedicine.getImg().forEach(
+                    img -> list.add(img.getUrl())
+            );
+            e.setImg(list);
+            switch (westernMedicine.getName()) {
                 case "xcg": diagnosisOfWeDTO.setXcg(e); break;
                 case "xdt": diagnosisOfWeDTO.setXdt(e); break;
                 case "ncg": diagnosisOfWeDTO.setNcg(e); break;
@@ -76,11 +88,20 @@ public class VisitRcodeToVisitRecordDTOConverter{
         BeanUtils.copyProperties(diagnosisAndtreatment, zdyzlDTO);
         CfDTO cfDTO = new CfDTO();
         ZycfDTO zycfDTO = new ZycfDTO();
+        OtherDTO otherDTO = new OtherDTO();
+
         BeanUtils.copyProperties(diagnosisAndtreatment, zdyzlDTO);
         BeanUtils.copyProperties(diagnosisAndtreatment, zycfDTO);
+        BeanUtils.copyProperties(diagnosisAndtreatment, otherDTO);
+        otherDTO.setOrther(diagnosisAndtreatment.getOther());
+        cfDTO.setOrther(otherDTO);
+
+        zycfDTO.setMedicine(MedicineToMedicineDTO.converter(diagnosisAndtreatment.getMedicine()));
         cfDTO.setZycf(zycfDTO);
+
         diagnosisAndtreatmentDTO.setCf(cfDTO);
-        diagnosisAndtreatmentDTO.setZdyz(zdyzlDTO);
+        diagnosisAndtreatmentDTO.setZdyzl(zdyzlDTO);
+
         visitRecordDTO.setDiagnosisAndtreatment(diagnosisAndtreatmentDTO);
         // 其他
         OtherMessage otherMessage = visitRecord.getOtherMessage();
@@ -94,7 +115,7 @@ public class VisitRcodeToVisitRecordDTOConverter{
         ortherDTO.setAnyu(anyuDTO);
         ortherDTO.setHuifangjilu(huifangjiluDTO);
         ortherDTO.setZhiliaoxiaoguo(zhiliaoxiaoguoDTO);
-        visitRecordDTO.setOrtherDTO(ortherDTO);
+        visitRecordDTO.setOrther(ortherDTO);
         return visitRecordDTO;
     }
 

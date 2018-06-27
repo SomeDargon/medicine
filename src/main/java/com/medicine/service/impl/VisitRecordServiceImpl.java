@@ -5,7 +5,9 @@ import com.medicine.domain.VisitRecord;
 import com.medicine.domain.attiendRecode.*;
 import com.medicine.domain.converter.VisitRcodeToVisitRecordDTOConverter;
 import com.medicine.domain.dto.PatientDTO;
+import com.medicine.domain.dto.PatientRecodDTO;
 import com.medicine.domain.dto.VisitRecordDTO;
+import com.medicine.domain.dto.attiendRecode.DataDTO;
 import com.medicine.domain.dto.attiendRecode.UserInfoDTO;
 import com.medicine.domain.from.VisitRecordForm;
 import com.medicine.domain.from.dome.DiagnosisAndtreatmentFrom;
@@ -64,14 +66,18 @@ public class VisitRecordServiceImpl implements VisitRecordService {
     }
 
     @Override
-    public VisitRecordDTO findById(Long id) {
-        VisitRecordDTO visitRecordDTO = new VisitRecordDTO();
+    public PatientRecodDTO findById(Long id) {
+        PatientRecodDTO recodDTO = new PatientRecodDTO();
         // 返回信息由两部份组成： 一个是登记记录， 另一个用户信息
         Patient patient = patientService.findById(id);
         UserInfoDTO userInfoDTO = UserInfoDTO.patientToUserInfo(patient);
 
         List<VisitRecord> visitRecords = visitRecordRepository.findByPatientId(id);
         List<VisitRecordDTO> visitRecordDTOS = VisitRcodeToVisitRecordDTOConverter.convert(visitRecords);
-        return null;
+        DataDTO dataDTO = new DataDTO();
+        dataDTO.setData(visitRecordDTOS);
+        recodDTO.setHistoryData(dataDTO);
+        recodDTO.setInfo(userInfoDTO);
+        return recodDTO;
     }
 }

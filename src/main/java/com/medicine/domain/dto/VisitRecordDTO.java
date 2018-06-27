@@ -24,7 +24,7 @@ public class VisitRecordDTO {
 
     private DiagnosisAndtreatmentDTO diagnosisAndtreatment;
 
-    private OrtherDTO ortherDTO;
+    private OrtherDTO orther;
 
 
 }

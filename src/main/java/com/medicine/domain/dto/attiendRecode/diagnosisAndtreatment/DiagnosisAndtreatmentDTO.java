@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 public class DiagnosisAndtreatmentDTO {
 
-    private ZdyzlDTO zdyz;
+    private ZdyzlDTO zdyzl;
 
     private CfDTO cf;
 

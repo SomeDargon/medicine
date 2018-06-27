@@ -3,9 +3,8 @@ package com.medicine.domain.dto.attiendRecode.diagnosisAndtreatment;
 import lombok.Data;
 
 @Data
-public class CfDTO {
+public class ImageDTO {
 
-    private ZycfDTO zycf;
+    private String url;
 
-    private OtherDTO orther;
 }

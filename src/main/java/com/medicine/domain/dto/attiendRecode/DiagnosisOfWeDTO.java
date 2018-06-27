@@ -1,6 +1,6 @@
 package com.medicine.domain.dto.attiendRecode;
 
-import com.medicine.domain.attiendRecode.WesternMedicine;
+import com.medicine.domain.dto.attiendRecode.diagnosisAndtreatment.WesternMedicineDTO;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -12,32 +12,32 @@ public class DiagnosisOfWeDTO {
     private String tigejiancha;
 
     @ApiModelProperty(value = "血常规")
-    private WesternMedicine xcg;
+    private WesternMedicineDTO xcg;
 
     @ApiModelProperty(value = "心电图")
-    private WesternMedicine xdt;
+    private WesternMedicineDTO xdt;
 
     @ApiModelProperty(value = "尿常规")
-    private WesternMedicine ncg;
+    private WesternMedicineDTO ncg;
 
     @ApiModelProperty(value = "CT")
-    private WesternMedicine ct;
+    private WesternMedicineDTO ct;
 
     @ApiModelProperty(value = "大便常规")
-    private WesternMedicine dbcg;
+    private WesternMedicineDTO dbcg;
 
     @ApiModelProperty(value = "MRI")
-    private WesternMedicine mri;
+    private WesternMedicineDTO mri;
 
     @ApiModelProperty(value = "血生化")
-    private WesternMedicine xsh;
+    private WesternMedicineDTO xsh;
 
     @ApiModelProperty(value = "超声")
-    private WesternMedicine cs;
+    private WesternMedicineDTO cs;
 
     @ApiModelProperty(value = "X光")
-    private WesternMedicine x;
+    private WesternMedicineDTO x;
 
     @ApiModelProperty(value = "其他")
-    private WesternMedicine orther;
+    private WesternMedicineDTO orther;
 }

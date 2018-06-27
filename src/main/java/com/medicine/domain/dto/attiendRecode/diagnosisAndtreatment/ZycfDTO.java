@@ -19,15 +19,8 @@ public class ZycfDTO {
     // 医师
     private String doctor;
 
-    // 中成药
-    private String medicineC;
 
-    // 西成药
-    private String medicineW;
-
-    // 其他
-    private String other;
 
     // 处方详情
-    private List<Medicine> medicine;
+    private List<MedicineDTO> medicine;
 }

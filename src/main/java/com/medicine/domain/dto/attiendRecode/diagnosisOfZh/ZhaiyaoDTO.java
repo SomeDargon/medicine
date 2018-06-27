@@ -9,4 +9,7 @@ public class ZhaiyaoDTO {
 
     // 舌诊
     private String shezheng;
+
+    //
+    private String maizhenSel = "1";
 }

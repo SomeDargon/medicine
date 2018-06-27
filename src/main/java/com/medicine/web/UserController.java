@@ -9,7 +9,7 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+//import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
@@ -18,14 +18,14 @@ import java.util.Map;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/apiM/user")
 @Api(value = "用户常用接口类", description = "用户登录接口")
 public class UserController {
 
     @Autowired
     private UserService userService;
 
-    private BCryptPasswordEncoder bCryptPasswordEncoder;
+//    private BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @ApiOperation(value="获取用户", notes="通过session")
     @RequestMapping(value = "/",method = RequestMethod.GET)
@@ -42,7 +42,7 @@ public class UserController {
     @PostMapping("/login")
     public JsonResult<Map> login(@RequestBody String name, @RequestBody String password) {
         Map<String, Object> map = new HashMap();
-        password = bCryptPasswordEncoder.encode(password);
+//        password = bCryptPasswordEncoder.encode(password);
         return JsonResult.<Map<String, Object>>builder().data(map).build();
     }
 
@@ -65,9 +65,9 @@ public class UserController {
                 ){
             return JsonResult.<String>builder().error("用户名或者密码为空").build();
         }
-        // 密码加密 用户名+密码
-        userForm.setPassword(bCryptPasswordEncoder.
-                encode(userForm.getPassword()+userForm.getUserName()));
+//        // 密码加密 用户名+密码
+//        userForm.setPassword(bCryptPasswordEncoder.
+//                encode(userForm.getPassword()+userForm.getUserName()));
 
         return JsonResult.<User>builder().data(
                 userService.save(UserForm.userFormConverterUser(userForm))

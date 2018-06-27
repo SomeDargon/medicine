@@ -55,7 +55,7 @@ public class DiagnosisOfZhFrom {
     @ApiModelProperty(value = "舌诊图片")
     private WesternMedicineFrom shezhenimg;
 
-    @ApiModelProperty(value = "舌诊")
+    @ApiModelProperty(value = "脉诊")
     private String maizhen;
 
     @ApiModelProperty(value = "闻诊")
@@ -69,6 +69,9 @@ public class DiagnosisOfZhFrom {
 
     @ApiModelProperty(value = "舌诊")
     private String shezheng;
+
+    @ApiModelProperty(value = "脉诊外键")
+    private String  maizhenSel;
 
     public static DiagnosisOfZh dZhFromToD(DiagnosisOfZhFrom diagnosisOfZhFrom) {
         DiagnosisOfZh diagnosisOfZh = new DiagnosisOfZh();

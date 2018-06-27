@@ -61,7 +61,7 @@ public class DiagnosisOfZh extends BaseEntity {
     @OneToOne(cascade = CascadeType.ALL)
     private WesternMedicine westernMedicine;
 
-    // 舌诊
+    // 脉诊
     private String maizhen;
 
     // 闻诊
@@ -75,5 +75,8 @@ public class DiagnosisOfZh extends BaseEntity {
 
     // 舌诊
     private String shezheng;
+
+    // 脉诊外键
+    private String maizhenSel;
 
 }

@@ -1,5 +1,6 @@
 package com.medicine.domain.dto.attiendRecode.diagnosisOfZh;
 
+import com.medicine.domain.dto.attiendRecode.diagnosisAndtreatment.WesternMedicineDTO;
 import lombok.Data;
 
 @Data
@@ -24,4 +25,6 @@ public class LookDTO {
 
     // 前后二阴及
     private String qinahoueryinjipaixiewu;
+
+    private WesternMedicineDTO shezhenimg;
 }

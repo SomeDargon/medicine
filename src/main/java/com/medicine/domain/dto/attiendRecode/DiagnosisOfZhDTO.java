@@ -1,6 +1,5 @@
 package com.medicine.domain.dto.attiendRecode;
 
-import com.medicine.domain.attiendRecode.WesternMedicine;
 import com.medicine.domain.dto.attiendRecode.diagnosisOfZh.AskDTO;
 import com.medicine.domain.dto.attiendRecode.diagnosisOfZh.LookDTO;
 import com.medicine.domain.dto.attiendRecode.diagnosisOfZh.WqDTO;
@@ -13,8 +12,6 @@ public class DiagnosisOfZhDTO {
     private AskDTO ask;
 
     private LookDTO look;
-
-    private WesternMedicine shezhenimg;
 
     private WqDTO wq;
 
