@@ -38,7 +38,9 @@ public class PatientFrom {
 
     private Double weight;
 
-    public  Patient patientFormToPatient(PatientFrom patientForm) {
+    private String address;
+
+    public static Patient patientFormToPatient(PatientFrom patientForm) {
         Patient  patient = new Patient();
         BeanUtils.copyProperties(patientForm, patient);
         return patient;

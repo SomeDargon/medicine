@@ -31,13 +31,16 @@ public class PatientServiceImpl implements PatientService {
 
     @Override
     public Patient save(PatientFrom patientFrom) {
-        return patientRepository.save(
-                patientFrom.patientFormToPatient(patientFrom)
-        );
+        return save(PatientFrom.patientFormToPatient(patientFrom));
     }
 
     @Override
     public Patient findById(Long id) {
         return patientRepository.getOne(id);
+    }
+
+    @Override
+    public Patient save(Patient patient) {
+        return patientRepository.save(patient);
     }
 }

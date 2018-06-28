@@ -16,6 +16,7 @@ import com.medicine.domain.from.dome.DiagnosisOfZhFrom;
 import com.medicine.domain.from.dome.OrtherFrom;
 import com.medicine.domain.repository.VisitRecordRepository;
 import com.medicine.service.*;
+import io.swagger.models.auth.In;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -39,6 +40,13 @@ public class VisitRecordServiceImpl implements VisitRecordService {
     @Override
     public VisitRecord save(VisitRecordForm visitRecordForm) {
         VisitRecord visitRecord = new VisitRecord();
+        // 就诊次数 当前次数+1
+        Integer time = visitRecordRepository.maxVisitTimes(visitRecordForm.getId()) + 1;
+        visitRecord.setVisitTimes(time);
+
+        Patient patient = patientService.findById(visitRecordForm.getId());
+        patient.setTime(time);
+        patientService.save(patient);
 
         visitRecord.setPatient(new Patient(visitRecordForm.getId()));
         // 把from 数据转换成实体类

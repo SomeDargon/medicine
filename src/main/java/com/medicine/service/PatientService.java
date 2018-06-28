@@ -13,4 +13,5 @@ public interface PatientService {
 
     Patient findById(Long id);
 
+    Patient save(Patient patient);
 }

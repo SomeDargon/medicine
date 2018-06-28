@@ -21,15 +21,6 @@ public class Patient extends BaseEntity {
 
     private String phone;
 
-    // 所在城市
-    private String city;
-
-    // 所在省
-    private String country;
-
-    // 所在区
-    private String province;
-
     // 出生地
     private String birthplace;
 
@@ -63,6 +54,12 @@ public class Patient extends BaseEntity {
 
     @Column(name = "update_date")
     private Date updateDate;
+
+    private Integer age;
+
+    private String address;
+
+    private Integer time;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "patient")
     private List<VisitRecord> visitRecords;

@@ -4,20 +4,22 @@ import com.medicine.domain.Patient;
 import com.medicine.domain.dto.PatientDTO;
 import org.springframework.beans.BeanUtils;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
 public class PatientToPatientDTOConverter{
 
-    public static PatientDTO converter(Patient Patient) {
-       PatientDTO PatientDTO = new PatientDTO();
-       BeanUtils.copyProperties(Patient, PatientDTO);
-       return  PatientDTO;
+    public static PatientDTO converter(Patient patient) {
+       PatientDTO patientDTO = new PatientDTO();
+       BeanUtils.copyProperties(patient, patientDTO);
+       return patientDTO;
     }
 
-    public static List<PatientDTO> converter(List<Patient> Patients) {
+    public static List<PatientDTO> converter(List<Patient> patients) {
         List<PatientDTO> PatientDTOS = new ArrayList<>();
-        Patients.forEach(Patient -> PatientDTOS.add(converter(Patient)));
+        patients.forEach(patient -> PatientDTOS.add(converter(patient)));
         return PatientDTOS;
     }
 }

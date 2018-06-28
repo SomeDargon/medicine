@@ -1,83 +1,91 @@
-2018-06-27 15:19:59 - 请求路径：/apiM/patient/addRec
-2018-06-27 15:19:59 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: detached entity passed to persist: com.medicine.domain.attiendRecode.WesternMedicine; nested exception is org.hibernate.PersistentObjectException: detached entity passed to persist: com.medicine.domain.attiendRecode.WesternMedicine] with root cause
-org.hibernate.PersistentObjectException: detached entity passed to persist: com.medicine.domain.attiendRecode.WesternMedicine
-	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:124)
-	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:807)
-	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:774)
-	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener$1.cascade(JpaPersistEventListener.java:80)
-	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:467)
-	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:392)
-	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:193)
-	at org.hibernate.engine.internal.Cascade.cascadeCollectionElements(Cascade.java:500)
-	at org.hibernate.engine.internal.Cascade.cascadeCollection(Cascade.java:432)
-	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:395)
-	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:193)
-	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:126)
-	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeAfterSave(AbstractSaveEventListener.java:445)
-	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:281)
-	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:182)
-	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:113)
-	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67)
-	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189)
-	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132)
-	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:807)
-	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:774)
-	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener$1.cascade(JpaPersistEventListener.java:80)
-	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:467)
-	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:392)
-	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:193)
-	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:126)
-	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeBeforeSave(AbstractSaveEventListener.java:414)
-	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:252)
-	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:182)
-	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:113)
-	at org.hibernate.jpa.event.internal.core.JpaPersistEventListener.saveWithGeneratedId(JpaPersistEventListener.java:67)
-	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:189)
-	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:132)
-	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:58)
-	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:783)
-	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:768)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:350)
-	at com.sun.proxy.$Proxy117.persist(Unknown Source)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:304)
-	at com.sun.proxy.$Proxy117.persist(Unknown Source)
-	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:490)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:377)
-	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200)
-	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:629)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:593)
-	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:578)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
-	at com.sun.proxy.$Proxy127.save(Unknown Source)
-	at com.medicine.service.impl.VisitRecordServiceImpl.save(VisitRecordServiceImpl.java:65)
-	at com.medicine.web.VisitRecordController.save(VisitRecordController.java:24)
+2018-06-28 11:18:43 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded; nested exception is java.lang.IllegalStateException: org.apache.tomcat.util.http.fileupload.FileUploadBase$FileSizeLimitExceededException: The field file exceeds its maximum permitted size of 1048576 bytes.] with root cause
+org.apache.tomcat.util.http.fileupload.FileUploadBase$FileSizeLimitExceededException: The field file exceeds its maximum permitted size of 1048576 bytes.
+	at org.apache.tomcat.util.http.fileupload.FileUploadBase$FileItemIteratorImpl$FileItemStreamImpl$1.raiseError(FileUploadBase.java:628)
+	at org.apache.tomcat.util.http.fileupload.util.LimitedInputStream.checkLimit(LimitedInputStream.java:76)
+	at org.apache.tomcat.util.http.fileupload.util.LimitedInputStream.read(LimitedInputStream.java:135)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.apache.tomcat.util.http.fileupload.util.Streams.copy(Streams.java:98)
+	at org.apache.tomcat.util.http.fileupload.util.Streams.copy(Streams.java:68)
+	at org.apache.tomcat.util.http.fileupload.FileUploadBase.parseRequest(FileUploadBase.java:293)
+	at org.apache.catalina.connector.Request.parseParts(Request.java:2884)
+	at org.apache.catalina.connector.Request.parseParameters(Request.java:3232)
+	at org.apache.catalina.connector.Request.getParameter(Request.java:1137)
+	at org.apache.catalina.connector.RequestFacade.getParameter(RequestFacade.java:381)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-06-28 11:18:43 - 请求路径：/error
+2018-06-28 11:18:44 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.multipart.MaxUploadSizeExceededException: Maximum upload size exceeded; nested exception is java.lang.IllegalStateException: org.apache.tomcat.util.http.fileupload.FileUploadBase$FileSizeLimitExceededException: The field file exceeds its maximum permitted size of 1048576 bytes.] with root cause
+org.apache.tomcat.util.http.fileupload.FileUploadBase$FileSizeLimitExceededException: The field file exceeds its maximum permitted size of 1048576 bytes.
+	at org.apache.tomcat.util.http.fileupload.FileUploadBase$FileItemIteratorImpl$FileItemStreamImpl$1.raiseError(FileUploadBase.java:628)
+	at org.apache.tomcat.util.http.fileupload.util.LimitedInputStream.checkLimit(LimitedInputStream.java:76)
+	at org.apache.tomcat.util.http.fileupload.util.LimitedInputStream.read(LimitedInputStream.java:135)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.apache.tomcat.util.http.fileupload.util.Streams.copy(Streams.java:98)
+	at org.apache.tomcat.util.http.fileupload.util.Streams.copy(Streams.java:68)
+	at org.apache.tomcat.util.http.fileupload.FileUploadBase.parseRequest(FileUploadBase.java:293)
+	at org.apache.catalina.connector.Request.parseParts(Request.java:2884)
+	at org.apache.catalina.connector.Request.parseParameters(Request.java:3232)
+	at org.apache.catalina.connector.Request.getParameter(Request.java:1137)
+	at org.apache.catalina.connector.RequestFacade.getParameter(RequestFacade.java:381)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-06-28 11:18:44 - 请求路径：/error
+2018-06-28 11:25:19 - Starting Application on SKY-20170913ZDM with PID 6160 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
+2018-06-28 11:25:19 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-28 11:25:19 - The following profiles are active: dev
+2018-06-28 11:25:30 - Started Application in 11.936 seconds (JVM running for 14.734)
+2018-06-28 11:25:37 - 请求路径：/apiM/upload/uploadImg
+2018-06-28 11:25:46 - 上传的文件原名称:1530156345900_.jpg
+2018-06-28 11:25:47 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.io.IOException: java.io.FileNotFoundException: C:\Users\Administrator\AppData\Local\Temp\tomcat.703320432904551236.8080\work\Tomcat\localhost\ROOT\home\tomcat-8.5.20\webapps\img\2018-06-28\15301563476671530156345900_.jpg (系统找不到指定的路径。)
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:122)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile.transferTo(StandardMultipartHttpServletRequest.java:255)
+	at com.medicine.util.UploadFile.uploadImg(UploadFile.java:50)
+	at com.medicine.web.FileUploadController.uploadImg(FileUploadController.java:28)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -98,39 +106,6 @@ org.hibernate.PersistentObjectException: detached entity passed to persist: com.
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:205)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
@@ -165,45 +140,75 @@ org.hibernate.PersistentObjectException: detached entity passed to persist: com.
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
-2018-06-27 15:19:59 - 请求路径：/error
-2018-06-27 15:20:09 - 请求路径：/apiM/patient/addRec
-2018-06-27 15:20:09 - HHH000346: Error during managed flush [org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.medicine.domain.VisitRecord.patient -> com.medicine.domain.Patient]
-2018-06-27 15:20:09 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.medicine.domain.VisitRecord.patient -> com.medicine.domain.Patient; nested exception is java.lang.IllegalStateException: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.medicine.domain.VisitRecord.patient -> com.medicine.domain.Patient] with root cause
-org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.medicine.domain.VisitRecord.patient -> com.medicine.domain.Patient
-	at org.hibernate.engine.spi.CascadingActions$8.noCascade(CascadingActions.java:380)
-	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:142)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.cascadeOnFlush(AbstractFlushingEventListener.java:150)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.prepareEntityFlushes(AbstractFlushingEventListener.java:141)
-	at org.hibernate.event.internal.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:74)
-	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:38)
-	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1437)
-	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:494)
-	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3245)
-	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2451)
-	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:473)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:156)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$100(JdbcResourceLocalTransactionCoordinatorImpl.java:38)
-	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:231)
-	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:68)
-	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:536)
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:746)
-	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:714)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:532)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:304)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
-	at com.sun.proxy.$Proxy127.save(Unknown Source)
-	at com.medicine.service.impl.VisitRecordServiceImpl.save(VisitRecordServiceImpl.java:65)
-	at com.medicine.web.VisitRecordController.save(VisitRecordController.java:24)
+Caused by: java.io.FileNotFoundException: C:\Users\Administrator\AppData\Local\Temp\tomcat.703320432904551236.8080\work\Tomcat\localhost\ROOT\home\tomcat-8.5.20\webapps\img\2018-06-28\15301563476671530156345900_.jpg (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.write(DiskFileItem.java:400)
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:120)
+	... 57 common frames omitted
+2018-06-28 11:25:47 - 请求路径：/error
+2018-06-28 14:04:10 - Starting Application on SKY-20170913ZDM with PID 9148 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
+2018-06-28 14:04:10 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-28 14:04:10 - The following profiles are active: dev
+2018-06-28 14:04:15 - Starting Application on SKY-20170913ZDM with PID 5408 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
+2018-06-28 14:04:15 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-28 14:04:15 - The following profiles are active: dev
+2018-06-28 14:04:27 - Started Application in 17.943 seconds (JVM running for 21.207)
+2018-06-28 14:04:30 - Failed to start connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.medicine.Application.main(Application.java:15)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+2018-06-28 14:04:30 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2018-06-28 14:05:08 - 请求路径：/apiM/upload/uploadImg
+2018-06-28 14:05:19 - 上传的文件原名称:1530165917378_.jpg
+2018-06-28 14:05:29 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.io.IOException: java.io.FileNotFoundException: C:\Users\Administrator\AppData\Local\Temp\tomcat.7287080856904784207.8080\work\Tomcat\localhost\ROOT\home\tomcat-8.5.20\webapps\img\2018-06-28\15301659237171530165917378_.jpg (系统找不到指定的路径。)
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:122)
+	at org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile.transferTo(StandardMultipartHttpServletRequest.java:255)
+	at com.medicine.util.UploadFile.uploadImg(UploadFile.java:50)
+	at com.medicine.web.FileUploadController.uploadImg(FileUploadController.java:28)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -224,39 +229,6 @@ org.hibernate.TransientPropertyValueException: object references an unsaved tran
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
 	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:205)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357)
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
 	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
@@ -291,138 +263,36 @@ org.hibernate.TransientPropertyValueException: object references an unsaved tran
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
-2018-06-27 15:20:09 - 请求路径：/error
-2018-06-27 15:20:27 - 请求路径：/apiM/patient/addRec
-2018-06-27 15:20:50 - 请求路径：/swagger-ui.html
-2018-06-27 15:20:50 - 请求路径：/swagger-resources/configuration/ui
-2018-06-27 15:20:50 - 请求路径：/webjars/springfox-swagger-ui/images/favicon-32x32.png
-2018-06-27 15:20:50 - 请求路径：/swagger-resources
-2018-06-27 15:20:50 - 请求路径：/swagger-resources/configuration/security
-2018-06-27 15:22:18 - 请求路径：/apiM/patient/info
-2018-06-27 15:22:23 - 请求路径：/apiM/patient/list
-2018-06-27 15:22:25 - 请求路径：/apiM/patient/info
-2018-06-27 15:25:07 - 请求路径：/apiM/patient/info
-2018-06-27 15:27:48 - 请求路径：/apiM/patient/info
-2018-06-27 15:27:54 - 请求路径：/apiM/patient/addRec
-2018-06-27 15:28:54 - 请求路径：/error
-2018-06-27 15:29:15 - 请求路径：/apiM/patient/info
-2018-06-27 15:30:09 - 请求路径：/apiM/patient/info
-2018-06-27 15:31:03 - 请求路径：/apiM/patient/addRec
-2018-06-27 15:31:30 - 请求路径：/apiM/patient/addRec
-2018-06-27 15:32:03 - 请求路径：/error
-2018-06-27 15:32:30 - 请求路径：/error
-2018-06-27 15:33:21 - Starting Application on SKY-20170913ZDM with PID 9700 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-06-27 15:33:21 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-06-27 15:33:21 - The following profiles are active: dev
-2018-06-27 15:33:33 - Started Application in 12.337 seconds (JVM running for 15.378)
-2018-06-27 15:35:50 - Starting Application on SKY-20170913ZDM with PID 9928 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-06-27 15:35:50 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-06-27 15:35:50 - The following profiles are active: dev
-2018-06-27 15:35:59 - Started Application in 11.457 seconds (JVM running for 13.395)
-2018-06-27 15:36:51 - 请求路径：/swagger-resources/configuration/ui
-2018-06-27 15:36:51 - 请求路径：/swagger-resources
-2018-06-27 15:36:51 - 请求路径：/swagger-resources/configuration/security
-2018-06-27 15:36:57 - 请求路径：/apiM/patient/info
-2018-06-27 15:47:15 - 请求路径：/apiM/patient/addRec
-2018-06-27 15:48:15 - 请求路径：/error
-2018-06-27 15:49:12 - 请求路径：/apiM/patient/addRec
-2018-06-27 15:49:47 - 请求路径：/apiM/patient/addRec
-2018-06-27 15:50:22 - 请求路径：/apiM/patient/info
-2018-06-27 15:50:23 - 请求路径：/apiM/patient/info
-2018-06-27 15:50:29 - 请求路径：/apiM/user/login
-2018-06-27 15:50:29 - 请求路径：/error
-2018-06-27 15:50:37 - 请求路径：/apiM/user/login
-2018-06-27 15:50:37 - 请求路径：/error
-2018-06-27 15:51:25 - Starting Application on SKY-20170913ZDM with PID 3456 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-06-27 15:51:25 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-06-27 15:51:25 - The following profiles are active: dev
-2018-06-27 15:51:39 - Started Application in 15.63 seconds (JVM running for 18.178)
-2018-06-27 15:51:55 - 请求路径：/apiM/user/login
-2018-06-27 15:52:13 - 请求路径：/error
-2018-06-27 15:52:18 - 请求路径：/apiM/patient/list
-2018-06-27 15:52:21 - 请求路径：/apiM/patient/info
-2018-06-27 15:57:14 - 请求路径：/apiM/patient/addRec
-2018-06-27 15:58:14 - 请求路径：/error
-2018-06-27 16:01:12 - Starting Application on SKY-20170913ZDM with PID 9252 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-06-27 16:01:12 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-06-27 16:01:12 - The following profiles are active: dev
-2018-06-27 16:01:21 - Started Application in 10.788 seconds (JVM running for 12.586)
-2018-06-27 16:01:30 - 请求路径：/apiM/patient/addRec
-2018-06-27 16:02:30 - 请求路径：/error
-2018-06-27 16:03:15 - 请求路径：/apiM/patient/info
-2018-06-27 16:03:22 - 请求路径：/apiM/patient/addRec
-2018-06-27 16:03:22 - 请求路径：/apiM/patient/addRec
-2018-06-27 16:03:38 - 请求路径：/apiM/patient/info
-2018-06-27 16:05:44 - 请求路径：/apiM/patient/info
-2018-06-27 16:05:50 - 请求路径：/apiM/patient/addRec
-2018-06-27 16:06:12 - 请求路径：/apiM/patient/info
-2018-06-27 16:06:19 - 请求路径：/apiM/patient/addRec
-2018-06-27 16:06:49 - 请求路径：/error
-2018-06-27 16:06:51 - 请求路径：/apiM/patient/info
-2018-06-27 16:06:55 - 请求路径：/apiM/patient/addRec
-2018-06-27 16:07:14 - 请求路径：/apiM/patient/info
-2018-06-27 16:07:19 - 请求路径：/apiM/patient/addRec
-2018-06-27 16:07:50 - 请求路径：/error
-2018-06-27 16:07:52 - 请求路径：/apiM/patient/info
-2018-06-27 16:07:57 - 请求路径：/apiM/patient/addRec
-2018-06-27 16:08:32 - 请求路径：/apiM/patient/info
-2018-06-27 16:08:42 - 请求路径：/apiM/patient/addRec
-2018-06-27 16:09:42 - 请求路径：/error
-2018-06-27 16:12:38 - 请求路径：/apiM/patient/list
-2018-06-27 16:12:38 - 请求路径：/apiM/patient/list
-2018-06-27 16:12:42 - 请求路径：/apiM/patient/list
-2018-06-27 16:12:47 - 请求路径：/apiM/patient/list
-2018-06-27 16:12:50 - 请求路径：/apiM/patient/info
-2018-06-27 16:12:50 - 请求路径：/apiM/patient/info
-2018-06-27 16:14:53 - 请求路径：/apiM/patient/info
-2018-06-27 16:15:29 - 请求路径：/apiM/patient/info
-2018-06-27 16:15:37 - 请求路径：/apiM/patient/addRec
-2018-06-27 16:15:37 - 请求路径：/apiM/patient/addRec
-2018-06-27 16:17:27 - 请求路径：/apiM/patient/info
-2018-06-27 16:17:48 - 请求路径：/apiM/patient/info
-2018-06-27 16:17:54 - 请求路径：/apiM/patient/addRec
-2018-06-27 16:18:12 - 请求路径：/apiM/patient/info
-2018-06-27 16:18:16 - 请求路径：/apiM/patient/addRec
-2018-06-27 16:18:29 - 请求路径：/apiM/patient/info
-2018-06-27 16:18:45 - 请求路径：/apiM/patient/info
-2018-06-27 16:18:49 - 请求路径：/apiM/patient/addRec
-2018-06-27 16:19:20 - 请求路径：/apiM/patient/info
-2018-06-27 16:19:28 - 请求路径：/apiM/patient/addRec
-2018-06-27 16:19:52 - 请求路径：/apiM/patient/info
-2018-06-27 16:19:56 - 请求路径：/apiM/patient/addRec
-2018-06-27 16:20:06 - 请求路径：/apiM/patient/addRec
-2018-06-27 16:20:49 - 请求路径：/apiM/patient/info
-2018-06-27 16:20:52 - 请求路径：/apiM/patient/addRec
-2018-06-27 16:20:53 - 请求路径：/apiM/patient/info
-2018-06-27 16:20:57 - 请求路径：/apiM/patient/addRec
-2018-06-27 16:20:57 - 请求路径：/apiM/patient/info
-2018-06-27 16:21:02 - 请求路径：/apiM/patient/info
-2018-06-27 16:21:09 - 请求路径：/apiM/patient/addRec
-2018-06-27 16:21:09 - 请求路径：/apiM/patient/info
-2018-06-27 16:21:31 - 请求路径：/apiM/patient/addRec
-2018-06-27 16:21:32 - 请求路径：/apiM/patient/info
-2018-06-27 16:22:23 - 请求路径：/apiM/patient/info
-2018-06-27 16:22:33 - 请求路径：/apiM/patient/list
-2018-06-27 16:22:36 - 请求路径：/apiM/patient/info
-2018-06-27 16:22:41 - 请求路径：/apiM/patient/addRec
-2018-06-27 16:22:48 - 请求路径：/apiM/patient/info
-2018-06-27 16:24:31 - 请求路径：/apiM/patient/info
-2018-06-27 16:24:31 - 请求路径：/apiM/patient/info
-2018-06-27 16:30:36 - 请求路径：/apiM/patient/info
-2018-06-27 16:30:52 - 请求路径：/apiM/patient/info
-2018-06-27 16:30:57 - 请求路径：/apiM/patient/addRec
-2018-06-27 16:30:57 - 请求路径：/apiM/patient/addRec
-2018-06-27 16:30:57 - 请求路径：/apiM/patient/info
-2018-06-27 16:32:09 - 请求路径：/apiM/patient/info
-2018-06-27 16:32:18 - 请求路径：/apiM/patient/addRec
-2018-06-27 16:32:18 - 请求路径：/apiM/patient/info
-2018-06-27 16:32:39 - 请求路径：/apiM/patient/info
-2018-06-27 16:32:39 - 请求路径：/apiM/patient/info
-2018-06-27 16:32:39 - 请求路径：/error
-2018-06-27 16:32:51 - 请求路径：/apiM/patient/info
-2018-06-27 16:32:51 - 请求路径：/error
-2018-06-27 16:33:28 - 请求路径：/apiM/patient/info
-2018-06-27 16:33:28 - 请求路径：/error
-2018-06-27 16:34:01 - 请求路径：/apiM/patient/info
-2018-06-27 16:34:04 - 请求路径：/apiM/patient/info
-2018-06-27 16:34:08 - 请求路径：/apiM/patient/info
+Caused by: java.io.FileNotFoundException: C:\Users\Administrator\AppData\Local\Temp\tomcat.7287080856904784207.8080\work\Tomcat\localhost\ROOT\home\tomcat-8.5.20\webapps\img\2018-06-28\15301659237171530165917378_.jpg (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at org.apache.tomcat.util.http.fileupload.disk.DiskFileItem.write(DiskFileItem.java:400)
+	at org.apache.catalina.core.ApplicationPart.write(ApplicationPart.java:120)
+	... 57 common frames omitted
+2018-06-28 14:05:29 - 请求路径：/error
+2018-06-28 14:08:32 - Starting Application on SKY-20170913ZDM with PID 4512 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
+2018-06-28 14:08:32 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-28 14:08:32 - The following profiles are active: dev
+2018-06-28 14:08:43 - Started Application in 12.068 seconds (JVM running for 14.413)
+2018-06-28 14:09:50 - 请求路径：/apiM/upload/uploadImg
+2018-06-28 14:09:56 - 上传的文件原名称:1530166195810_.jpg
+2018-06-28 14:09:58 - 文件成功上传到指定目录下:org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@2930145
+2018-06-28 14:12:20 - Starting Application on SKY-20170913ZDM with PID 3652 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
+2018-06-28 14:12:20 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-28 14:12:20 - The following profiles are active: dev
+2018-06-28 14:12:29 - Started Application in 10.388 seconds (JVM running for 12.254)
+2018-06-28 14:52:40 - Starting VisitRecordRepositoryTest on SKY-20170913ZDM with PID 8444 (started by Administrator in D:\workspace\medicine\chinese-medicine)
+2018-06-28 14:52:40 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-28 14:52:40 - The following profiles are active: dev
+2018-06-28 14:52:55 - Started VisitRecordRepositoryTest in 15.061 seconds (JVM running for 18.369)
+2018-06-28 14:52:58 - Unknown column 'patient_id' in 'where clause'
+2018-06-28 14:53:32 - Starting VisitRecordRepositoryTest on SKY-20170913ZDM with PID 1056 (started by Administrator in D:\workspace\medicine\chinese-medicine)
+2018-06-28 14:53:32 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-28 14:53:32 - The following profiles are active: dev
+2018-06-28 14:53:47 - Started VisitRecordRepositoryTest in 15.178 seconds (JVM running for 18.829)
+2018-06-28 14:54:17 - Starting VisitRecordRepositoryTest on SKY-20170913ZDM with PID 7144 (started by Administrator in D:\workspace\medicine\chinese-medicine)
+2018-06-28 14:54:17 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-28 14:54:17 - The following profiles are active: dev
+2018-06-28 14:54:32 - Started VisitRecordRepositoryTest in 15.585 seconds (JVM running for 18.757)

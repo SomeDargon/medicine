@@ -18,9 +18,14 @@ public class VisitRecordRepositoryTest {
     @Autowired
     private VisitRecordRepository visitRecordRepository;
 
-    @Test
     public void findByPatientId() {
         List<VisitRecord> visitRecords = visitRecordRepository.findByPatientId(1L);
         System.out.println(visitRecords);
+    }
+
+    @Test
+    public void findMax() {
+        Integer max = visitRecordRepository.maxVisitTimes(1L);
+        System.out.println(max);
     }
 }
