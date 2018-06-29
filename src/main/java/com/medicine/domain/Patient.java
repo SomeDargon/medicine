@@ -61,6 +61,9 @@ public class Patient extends BaseEntity {
 
     private Integer time;
 
+    @Column(name = "first_date")
+    private Date firstDate;
+
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "patient")
     private List<VisitRecord> visitRecords;
 

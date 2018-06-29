@@ -61,6 +61,7 @@ public class DiagnosisAndtreatmentFrom {
                        diagnosisAndtreatment
                )
        );
+       diagnosisAndtreatment.setOther(diagnosisAndtreatmentFrom.getOrther());
        return diagnosisAndtreatment;
     }
 

@@ -25,7 +25,9 @@ public class DiagnosisOfWeFrom {
         List<WesternMedicine> westernMedicines = diagnosisOfWeFrom.getWesternMedicines();
         westernMedicines.forEach(e -> {
             e.setDOfWe(diagnosisOfWe);
-            e.getImg().forEach(image -> image.setWestern(e));
+            if (e.getImg() != null) {
+                e.getImg().forEach(image -> image.setWestern(e));
+            }
         });
         diagnosisOfWe.setWesternMedicines(westernMedicines);
         return diagnosisOfWe;

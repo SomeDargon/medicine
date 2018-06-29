@@ -6,12 +6,16 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import org.springframework.beans.BeanUtils;
 
+import java.util.Date;
+
 @Data
 @ApiModel(value = "病人提交数据")
 public class PatientFrom {
 
     @ApiModelProperty(value = "id", required = false)
     private Long id;
+
+    private String sex;
 
     private String name;
 
@@ -43,6 +47,10 @@ public class PatientFrom {
     public static Patient patientFormToPatient(PatientFrom patientForm) {
         Patient  patient = new Patient();
         BeanUtils.copyProperties(patientForm, patient);
+        patient.setTime(0);
+        Date date = new Date();
+        patient.setCreateDate(date);
+        patient.setVisitTime(date);
         return patient;
     }
 }

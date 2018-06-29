@@ -76,7 +76,10 @@
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>tk.mybatis</groupId> <artifactId>mapper-spring-boot-starter</artifactId> <version>${mybatis.version}</version> </dependency> <!-- 分页插件
+			<groupId>tk.mybatis</groupId>
+			<artifactId>mapper-spring-boot-starter</artifactId>
+			<version>${mybatis.version}</version>
+		</dependency> <!-- 分页插件
  文档地址：https://github.com/pagehelper/Mybatis-PageHelper/blob/master/wikis/zh/HowToUse.md -->
 		<dependency>
 			<groupId>com.github.pagehelper</groupId>

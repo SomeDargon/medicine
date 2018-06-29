@@ -21,6 +21,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 @Service
@@ -40,12 +41,18 @@ public class VisitRecordServiceImpl implements VisitRecordService {
     @Override
     public VisitRecord save(VisitRecordForm visitRecordForm) {
         VisitRecord visitRecord = new VisitRecord();
+        visitRecord.setCreateDate(new Date());
         // 就诊次数 当前次数+1
-        Integer time = visitRecordRepository.maxVisitTimes(visitRecordForm.getId()) + 1;
+        Integer currentTime = visitRecordRepository.
+                maxVisitTimes(visitRecordForm.getId());
+        Integer time =  currentTime == null?1:currentTime+1;
         visitRecord.setVisitTimes(time);
 
         Patient patient = patientService.findById(visitRecordForm.getId());
         patient.setTime(time);
+        if (time.equals(1)) {
+            patient.setFirstDate(new Date());
+        }
         patientService.save(patient);
 
         visitRecord.setPatient(new Patient(visitRecordForm.getId()));

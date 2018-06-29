@@ -24,6 +24,7 @@ public class VisitRcodeToVisitRecordDTOConverter{
     public static VisitRecordDTO convert(VisitRecord visitRecord) {
         VisitRecordDTO visitRecordDTO = new VisitRecordDTO();
         BeanUtils.copyProperties(visitRecord, visitRecordDTO);
+        visitRecordDTO.setDate(visitRecord.getCreateDate());
         // 中医四诊 这个是根据前端定的api
         DiagnosisOfZh diagnosisOfZh = visitRecord.getDiagnosisOfZh();
         DiagnosisOfZhDTO diagnosisOfZhDTO = new DiagnosisOfZhDTO();
@@ -98,7 +99,6 @@ public class VisitRcodeToVisitRecordDTOConverter{
 
         zycfDTO.setMedicine(MedicineToMedicineDTO.converter(diagnosisAndtreatment.getMedicine()));
         cfDTO.setZycf(zycfDTO);
-
         diagnosisAndtreatmentDTO.setCf(cfDTO);
         diagnosisAndtreatmentDTO.setZdyzl(zdyzlDTO);
 
