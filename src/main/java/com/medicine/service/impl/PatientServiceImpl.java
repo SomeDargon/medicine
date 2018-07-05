@@ -22,7 +22,7 @@ public class PatientServiceImpl implements PatientService {
     @Override
     public Page<PatientDTO> findPatientCriteria(Integer page, Integer size, String name) {
         Pageable pageable = PageRequest.of(page,size);
-        Page<Patient> patients = patientRepository.findAll(pageable);
+        Page<Patient> patients = patientRepository.findByNameLike(name, pageable);
         List<PatientDTO> PatientDTOS =
                 PatientToPatientDTOConverter.converter(patients.getContent());
 
@@ -43,4 +43,11 @@ public class PatientServiceImpl implements PatientService {
     public Patient save(Patient patient) {
         return patientRepository.save(patient);
     }
+
+    @Override
+    public List<Patient> findByPhone(String phone) {
+        return patientRepository.findByPhone(phone);
+    }
+
+
 }

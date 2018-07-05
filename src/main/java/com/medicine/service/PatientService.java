@@ -5,6 +5,8 @@ import com.medicine.domain.dto.PatientDTO;
 import com.medicine.domain.from.PatientFrom;
 import org.springframework.data.domain.Page;
 
+import java.util.List;
+
 public interface PatientService {
 
     Page<PatientDTO> findPatientCriteria(Integer page, Integer size, String name);
@@ -14,4 +16,6 @@ public interface PatientService {
     Patient findById(Long id);
 
     Patient save(Patient patient);
+
+    List<Patient> findByPhone(String phone);
 }
