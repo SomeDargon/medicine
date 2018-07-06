@@ -9,4 +9,6 @@ import java.util.List;
 public interface PlatformManagerRepository extends JpaRepository<PlatformManager, Long> {
 
     List<PlatformManager> findByMenuType(String menuType);
+
+    List<PlatformManager> findByIsMenuAndMenuType(Integer isMenu, String MenuType);
 }

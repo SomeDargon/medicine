@@ -3,9 +3,12 @@ package com.medicine.domain.dtoAndFrom.menu;
 
 import com.medicine.domain.menu.PlatformManager;
 import com.medicine.domain.menu.PlatformManagerData;
+import com.medicine.domain.menu.Prescription;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.beans.BeanUtils;
+
+import java.util.List;
 
 @Getter
 @Setter
@@ -16,6 +19,7 @@ public class SuperManager {
     private Long key;
     private Integer type;
     private String sysType;
+    private Integer isMenu;
 
     public  PlatformManager managerToPlatformConvert(SuperManager cdmManager) {
         PlatformManager platformManager = new PlatformManager();
@@ -40,6 +44,18 @@ public class SuperManager {
      * @return
      */
     public  SuperManager platformToCdmManagerConvert(PlatformManager platformManager, PlatformManagerData platformManagerData) {
+        return null;
+    }
+
+
+    /**
+     * Fj 特殊的管理
+     * @param platformManager
+     * @param platformManagerData
+     * @param prescriptions
+     * @return
+     */
+    public SuperManager platformToCdmManagerConvert(PlatformManager platformManager, PlatformManagerData platformManagerData, List<Prescription> prescriptions) {
         return null;
     }
 }

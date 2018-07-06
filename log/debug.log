@@ -1,380 +1,67 @@
-2018-07-05 10:51:56 - Starting Application on SKY-20170913ZDM with PID 8120 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-07-05 10:51:56 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-07-05 10:51:56 - The following profiles are active: dev
-2018-07-05 10:52:13 - Started Application in 17.308 seconds (JVM running for 20.676)
-2018-07-05 10:53:58 - 请求路径：/swagger-ui.html
-2018-07-05 10:53:58 - 请求路径：/webjars/springfox-swagger-ui/css/typography.css
-2018-07-05 10:53:58 - 请求路径：/webjars/springfox-swagger-ui/css/reset.css
-2018-07-05 10:53:58 - 请求路径：/webjars/springfox-swagger-ui/lib/jquery-1.8.0.min.js
-2018-07-05 10:53:58 - 请求路径：/webjars/springfox-swagger-ui/lib/jquery.slideto.min.js
-2018-07-05 10:53:58 - 请求路径：/webjars/springfox-swagger-ui/css/screen.css
-2018-07-05 10:53:58 - 请求路径：/webjars/springfox-swagger-ui/lib/object-assign-pollyfill.js
-2018-07-05 10:53:58 - 请求路径：/webjars/springfox-swagger-ui/lib/jquery.wiggle.min.js
-2018-07-05 10:53:58 - 请求路径：/webjars/springfox-swagger-ui/lib/jquery.ba-bbq.min.js
-2018-07-05 10:53:58 - 请求路径：/webjars/springfox-swagger-ui/lib/lodash.min.js
-2018-07-05 10:53:58 - 请求路径：/webjars/springfox-swagger-ui/lib/handlebars-4.0.5.js
-2018-07-05 10:53:58 - 请求路径：/webjars/springfox-swagger-ui/lib/backbone-min.js
-2018-07-05 10:53:58 - 请求路径：/webjars/springfox-swagger-ui/lib/highlight.9.1.0.pack.js
-2018-07-05 10:53:58 - 请求路径：/webjars/springfox-swagger-ui/swagger-ui.min.js
-2018-07-05 10:53:58 - 请求路径：/webjars/springfox-swagger-ui/lib/jsoneditor.min.js
-2018-07-05 10:53:58 - 请求路径：/webjars/springfox-swagger-ui/lib/highlight.9.1.0.pack_extended.js
-2018-07-05 10:53:58 - 请求路径：/webjars/springfox-swagger-ui/lib/marked.js
-2018-07-05 10:53:58 - 请求路径：/webjars/springfox-swagger-ui/lib/swagger-oauth.js
-2018-07-05 10:53:58 - 请求路径：/webjars/springfox-swagger-ui/springfox.js
-2018-07-05 10:53:58 - 请求路径：/webjars/springfox-swagger-ui/images/logo_small.png
-2018-07-05 10:53:59 - 请求路径：/webjars/springfox-swagger-ui/css/print.css
-2018-07-05 10:53:59 - 请求路径：/swagger-resources/configuration/ui
-2018-07-05 10:53:59 - 请求路径：/webjars/springfox-swagger-ui/images/favicon-32x32.png
-2018-07-05 10:53:59 - 请求路径：/webjars/springfox-swagger-ui/images/favicon-16x16.png
-2018-07-05 10:53:59 - 请求路径：/swagger-resources
-2018-07-05 10:53:59 - 请求路径：/swagger-resources/configuration/security
-2018-07-05 10:54:07 - 请求路径：/webjars/springfox-swagger-ui/images/throbber.gif
-2018-07-05 10:56:12 - 请求路径：/apiM/platform/save
-2018-07-05 10:56:51 - 请求路径：/apiM/platform/save
-2018-07-05 11:12:12 - Starting Application on SKY-20170913ZDM with PID 7328 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-07-05 11:12:12 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-07-05 11:12:12 - The following profiles are active: dev
-2018-07-05 11:12:21 - Started Application in 9.889 seconds (JVM running for 12.537)
-2018-07-05 11:14:01 - 请求路径：/apiM/platform/save
-2018-07-05 11:29:03 - Starting Application on SKY-20170913ZDM with PID 5388 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-07-05 11:29:03 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-07-05 11:29:03 - The following profiles are active: dev
-2018-07-05 11:29:11 - Started Application in 9.842 seconds (JVM running for 11.444)
-2018-07-05 11:29:54 - 请求路径：/apiM/platform/save
-2018-07-05 11:30:50 - Starting Application on SKY-20170913ZDM with PID 5536 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-07-05 11:30:50 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-07-05 11:30:50 - The following profiles are active: dev
-2018-07-05 11:30:58 - Started Application in 8.917 seconds (JVM running for 11.054)
-2018-07-05 11:32:24 - 请求路径：/apiM/platform/save
-2018-07-05 11:47:19 - Starting Application on SKY-20170913ZDM with PID 6776 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-07-05 11:47:19 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-07-05 11:47:19 - The following profiles are active: dev
-2018-07-05 11:47:28 - Started Application in 10.68 seconds (JVM running for 12.633)
-2018-07-05 11:47:35 - 请求路径：/apiM/platform/save
-2018-07-05 11:48:47 - Starting Application on SKY-20170913ZDM with PID 8120 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-07-05 11:48:47 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-07-05 11:48:47 - The following profiles are active: dev
-2018-07-05 11:48:56 - Started Application in 9.248 seconds (JVM running for 11.387)
-2018-07-05 11:50:01 - 请求路径：/apiM/platform/save
-2018-07-05 11:51:00 - 请求路径：/apiM/patient/list
-2018-07-05 11:51:00 - 请求路径：/apiM/patient/list
-2018-07-05 11:52:37 - Starting Application on SKY-20170913ZDM with PID 6892 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-07-05 11:52:37 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-07-05 11:52:37 - The following profiles are active: dev
-2018-07-05 11:52:47 - Started Application in 10.576 seconds (JVM running for 12.732)
-2018-07-05 11:53:29 - 请求路径：/apiM/platform/save
-2018-07-05 11:54:12 - 请求路径：/apiM/platform/save
-2018-07-05 14:22:01 - Starting Application on SKY-20170913ZDM with PID 7308 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-07-05 14:22:01 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-07-05 14:22:01 - The following profiles are active: dev
-2018-07-05 14:22:10 - Started Application in 9.175 seconds (JVM running for 11.194)
-2018-07-05 14:22:20 - 请求路径：/swagger-ui.html
-2018-07-05 14:22:20 - 请求路径：/webjars/springfox-swagger-ui/css/reset.css
-2018-07-05 14:22:20 - 请求路径：/webjars/springfox-swagger-ui/lib/object-assign-pollyfill.js
-2018-07-05 14:22:20 - 请求路径：/webjars/springfox-swagger-ui/lib/jquery.slideto.min.js
-2018-07-05 14:22:20 - 请求路径：/webjars/springfox-swagger-ui/css/typography.css
-2018-07-05 14:22:20 - 请求路径：/webjars/springfox-swagger-ui/css/screen.css
-2018-07-05 14:22:20 - 请求路径：/webjars/springfox-swagger-ui/lib/handlebars-4.0.5.js
-2018-07-05 14:22:20 - 请求路径：/webjars/springfox-swagger-ui/lib/jquery-1.8.0.min.js
-2018-07-05 14:22:20 - 请求路径：/webjars/springfox-swagger-ui/swagger-ui.min.js
-2018-07-05 14:22:20 - 请求路径：/webjars/springfox-swagger-ui/lib/jquery.ba-bbq.min.js
-2018-07-05 14:22:20 - 请求路径：/webjars/springfox-swagger-ui/lib/lodash.min.js
-2018-07-05 14:22:20 - 请求路径：/webjars/springfox-swagger-ui/lib/jquery.wiggle.min.js
-2018-07-05 14:22:20 - 请求路径：/webjars/springfox-swagger-ui/lib/highlight.9.1.0.pack.js
-2018-07-05 14:22:20 - 请求路径：/webjars/springfox-swagger-ui/lib/backbone-min.js
-2018-07-05 14:22:20 - 请求路径：/webjars/springfox-swagger-ui/lib/highlight.9.1.0.pack_extended.js
-2018-07-05 14:22:20 - 请求路径：/webjars/springfox-swagger-ui/lib/jsoneditor.min.js
-2018-07-05 14:22:20 - 请求路径：/webjars/springfox-swagger-ui/lib/swagger-oauth.js
-2018-07-05 14:22:20 - 请求路径：/webjars/springfox-swagger-ui/springfox.js
-2018-07-05 14:22:20 - 请求路径：/webjars/springfox-swagger-ui/lib/marked.js
-2018-07-05 14:22:20 - 请求路径：/webjars/springfox-swagger-ui/images/logo_small.png
-2018-07-05 14:22:20 - 请求路径：/webjars/springfox-swagger-ui/css/print.css
-2018-07-05 14:22:20 - 请求路径：/swagger-resources/configuration/ui
-2018-07-05 14:22:20 - 请求路径：/swagger-resources
-2018-07-05 14:22:21 - 请求路径：/swagger-resources/configuration/security
-2018-07-05 14:22:21 - 请求路径：/webjars/springfox-swagger-ui/images/throbber.gif
-2018-07-05 14:22:30 - 请求路径：/swagger-ui.html
-2018-07-05 14:22:31 - 请求路径：/swagger-resources/configuration/ui
-2018-07-05 14:22:31 - 请求路径：/swagger-resources
-2018-07-05 14:22:31 - 请求路径：/swagger-resources/configuration/security
-2018-07-05 14:22:38 - 请求路径：/swagger-resources/configuration/ui
-2018-07-05 14:22:38 - 请求路径：/swagger-resources
-2018-07-05 14:22:38 - 请求路径：/swagger-resources/configuration/security
-2018-07-05 14:24:02 - Starting Application on SKY-20170913ZDM with PID 6924 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-07-05 14:24:02 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-07-05 14:24:02 - The following profiles are active: dev
-2018-07-05 14:24:12 - Started Application in 11.346 seconds (JVM running for 12.962)
-2018-07-05 14:24:29 - 请求路径：/swagger-resources/configuration/ui
-2018-07-05 14:24:29 - 请求路径：/swagger-resources
-2018-07-05 14:24:30 - 请求路径：/swagger-resources/configuration/security
-2018-07-05 14:24:43 - 请求路径：/apiM/platform/getListData
-2018-07-05 14:25:16 - 请求路径：/apiM/platform/getListData
-2018-07-05 14:25:44 - 请求路径：/apiM/platform/getListData
-2018-07-05 14:26:18 - 请求路径：/apiM/platform/getListData
-2018-07-05 14:27:46 - Starting Application on SKY-20170913ZDM with PID 8200 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-07-05 14:27:46 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-07-05 14:27:46 - The following profiles are active: dev
-2018-07-05 14:27:56 - Started Application in 10.453 seconds (JVM running for 12.106)
-2018-07-05 14:28:01 - 请求路径：/apiM/platform/getListData
-2018-07-05 14:34:25 - Starting Application on SKY-20170913ZDM with PID 8644 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-07-05 14:34:25 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-07-05 14:34:25 - The following profiles are active: dev
-2018-07-05 14:34:36 - Started Application in 11.679 seconds (JVM running for 13.131)
-2018-07-05 14:34:39 - 请求路径：/apiM/platform/getListData
-2018-07-05 14:39:42 - Starting Application on SKY-20170913ZDM with PID 8612 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-07-05 14:39:42 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-07-05 14:39:42 - The following profiles are active: dev
-2018-07-05 14:39:52 - Started Application in 10.428 seconds (JVM running for 12.105)
-2018-07-05 14:40:45 - 请求路径：/apiM/platform/save
-2018-07-05 14:41:14 - 请求路径：/apiM/platform/getListData
-2018-07-05 14:44:59 - Starting Application on SKY-20170913ZDM with PID 8984 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-07-05 14:44:59 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-07-05 14:44:59 - The following profiles are active: dev
-2018-07-05 14:45:09 - Started Application in 10.587 seconds (JVM running for 12.449)
-2018-07-05 14:47:55 - 请求路径：/apiM/platform/save
-2018-07-05 14:48:14 - 请求路径：/apiM/platform/save
-2018-07-05 14:48:25 - 请求路径：/apiM/platform/getListData
-2018-07-05 14:48:56 - 请求路径：/apiM/platform/save
-2018-07-05 14:49:04 - 请求路径：/apiM/platform/getListData
-2018-07-05 14:49:47 - 请求路径：/apiM/platform/save
-2018-07-05 14:50:17 - 请求路径：/apiM/patient/list
-2018-07-05 14:50:17 - 请求路径：/apiM/patient/list
-2018-07-05 14:50:25 - 请求路径：/apiM/patient/list
-2018-07-05 14:50:39 - 请求路径：/apiM/platform/getListData
-2018-07-05 15:25:42 - 请求路径：/apiM/patient/list
-2018-07-05 15:25:42 - 请求路径：/apiM/patient/list
-2018-07-05 15:35:49 - Starting Application on SKY-20170913ZDM with PID 7928 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-07-05 15:35:49 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-07-05 15:35:49 - The following profiles are active: dev
-2018-07-05 15:35:59 - Started Application in 10.861 seconds (JVM running for 13.464)
-2018-07-05 15:36:33 - 请求路径：/apiM/platform/save
-2018-07-05 15:38:20 - 请求路径：/apiM/platform/save
-2018-07-05 15:51:13 - Starting Application on SKY-20170913ZDM with PID 2764 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-07-05 15:51:13 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-07-05 15:51:13 - The following profiles are active: dev
-2018-07-05 15:51:23 - Started Application in 10.882 seconds (JVM running for 13.66)
-2018-07-05 15:51:38 - 请求路径：/apiM/platform/save
-2018-07-05 15:51:50 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: The entity must not be null!; nested exception is java.lang.IllegalArgumentException: The entity must not be null!] with root cause
-java.lang.IllegalArgumentException: The entity must not be null!
-	at org.springframework.util.Assert.notNull(Assert.java:193)
-	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.delete(SimpleJpaRepository.java:161)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:377)
-	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200)
-	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:629)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:593)
-	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:578)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
-	at com.sun.proxy.$Proxy115.delete(Unknown Source)
-	at com.medicine.service.impl.PlatformManagerServiceImpl.getPlatformRecord(PlatformManagerServiceImpl.java:49)
-	at com.medicine.service.impl.PlatformManagerServiceImpl.save(PlatformManagerServiceImpl.java:36)
-	at com.medicine.web.PlatformManagerController.save(PlatformManagerController.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-2018-07-05 15:51:51 - 请求路径：/error
-2018-07-05 15:52:29 - 请求路径：/apiM/platform/save
-2018-07-05 15:53:17 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: The entity must not be null!; nested exception is java.lang.IllegalArgumentException: The entity must not be null!] with root cause
-java.lang.IllegalArgumentException: The entity must not be null!
-	at org.springframework.util.Assert.notNull(Assert.java:193)
-	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.delete(SimpleJpaRepository.java:161)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:377)
-	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200)
-	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:629)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:593)
-	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:578)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
-	at com.sun.proxy.$Proxy115.delete(Unknown Source)
-	at com.medicine.service.impl.PlatformManagerServiceImpl.getPlatformRecord(PlatformManagerServiceImpl.java:49)
-	at com.medicine.service.impl.PlatformManagerServiceImpl.save(PlatformManagerServiceImpl.java:36)
-	at com.medicine.web.PlatformManagerController.save(PlatformManagerController.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:748)
-2018-07-05 15:53:17 - 请求路径：/error
-2018-07-05 16:00:06 - Starting Application on SKY-20170913ZDM with PID 9056 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-07-05 16:00:06 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-07-05 16:00:06 - The following profiles are active: dev
-2018-07-05 16:00:16 - Started Application in 11.474 seconds (JVM running for 14.031)
-2018-07-05 16:00:23 - 请求路径：/apiM/platform/save
-2018-07-05 16:01:38 - 请求路径：/apiM/platform/save
-2018-07-05 16:03:07 - Starting Application on SKY-20170913ZDM with PID 7892 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-07-05 16:03:07 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-07-05 16:03:07 - The following profiles are active: dev
-2018-07-05 16:03:17 - Started Application in 11.493 seconds (JVM running for 13.343)
-2018-07-05 16:03:47 - 请求路径：/apiM/platform/save
-2018-07-05 16:05:33 - 请求路径：/apiM/platform/save
-2018-07-05 16:07:42 - 请求路径：/apiM/patient/info
-2018-07-05 16:07:42 - 请求路径：/apiM/patient/info
-2018-07-05 16:07:42 - 请求路径：/error
-2018-07-05 16:18:28 - Starting Application on SKY-20170913ZDM with PID 9024 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-07-05 16:18:28 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-07-05 16:18:28 - The following profiles are active: dev
-2018-07-05 16:18:37 - Started Application in 9.746 seconds (JVM running for 12.254)
-2018-07-05 16:18:45 - 请求路径：/apiM/platform/getListData
-2018-07-05 16:19:07 - 请求路径：/apiM/platform/getListData
-2018-07-05 16:19:51 - Starting Application on SKY-20170913ZDM with PID 8760 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-07-05 16:19:51 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-07-05 16:19:51 - The following profiles are active: dev
-2018-07-05 16:20:02 - Started Application in 11.67 seconds (JVM running for 14.197)
-2018-07-05 16:20:15 - 请求路径：/apiM/platform/getListData
-2018-07-05 16:20:47 - 请求路径：/apiM/platform/getListData
-2018-07-05 16:24:38 - Starting Application on SKY-20170913ZDM with PID 7440 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-07-05 16:24:38 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-07-05 16:24:38 - The following profiles are active: dev
-2018-07-05 16:24:47 - Started Application in 9.67 seconds (JVM running for 11.57)
-2018-07-05 16:24:54 - 请求路径：/apiM/platform/getListData
-2018-07-05 16:33:36 - Starting Application on SKY-20170913ZDM with PID 8576 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
-2018-07-05 16:33:36 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
-2018-07-05 16:33:36 - The following profiles are active: dev
-2018-07-05 16:33:48 - Started Application in 12.953 seconds (JVM running for 17.609)
-2018-07-05 16:33:55 - 请求路径：/apiM/platform/getListData
-2018-07-05 16:34:09 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+2018-07-06 14:10:43 - Starting Application on SKY-20170913ZDM with PID 6304 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
+2018-07-06 14:10:43 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-07-06 14:10:43 - The following profiles are active: dev
+2018-07-06 14:10:59 - Started Application in 17.21 seconds (JVM running for 25.474)
+2018-07-06 14:10:59 - 请求路径：/swagger-ui.html
+2018-07-06 14:11:00 - 请求路径：/webjars/springfox-swagger-ui/css/typography.css
+2018-07-06 14:11:00 - 请求路径：/webjars/springfox-swagger-ui/lib/jquery-1.8.0.min.js
+2018-07-06 14:11:00 - 请求路径：/webjars/springfox-swagger-ui/css/reset.css
+2018-07-06 14:11:00 - 请求路径：/webjars/springfox-swagger-ui/lib/jquery.slideto.min.js
+2018-07-06 14:11:00 - 请求路径：/webjars/springfox-swagger-ui/lib/jquery.wiggle.min.js
+2018-07-06 14:11:00 - 请求路径：/webjars/springfox-swagger-ui/css/screen.css
+2018-07-06 14:11:00 - 请求路径：/webjars/springfox-swagger-ui/lib/object-assign-pollyfill.js
+2018-07-06 14:11:00 - 请求路径：/webjars/springfox-swagger-ui/lib/jquery.ba-bbq.min.js
+2018-07-06 14:11:00 - 请求路径：/webjars/springfox-swagger-ui/lib/handlebars-4.0.5.js
+2018-07-06 14:11:00 - 请求路径：/webjars/springfox-swagger-ui/lib/lodash.min.js
+2018-07-06 14:11:00 - 请求路径：/webjars/springfox-swagger-ui/lib/backbone-min.js
+2018-07-06 14:11:00 - 请求路径：/webjars/springfox-swagger-ui/lib/highlight.9.1.0.pack.js
+2018-07-06 14:11:00 - 请求路径：/webjars/springfox-swagger-ui/lib/highlight.9.1.0.pack_extended.js
+2018-07-06 14:11:00 - 请求路径：/webjars/springfox-swagger-ui/lib/marked.js
+2018-07-06 14:11:00 - 请求路径：/webjars/springfox-swagger-ui/lib/jsoneditor.min.js
+2018-07-06 14:11:00 - 请求路径：/webjars/springfox-swagger-ui/swagger-ui.min.js
+2018-07-06 14:11:00 - 请求路径：/webjars/springfox-swagger-ui/lib/swagger-oauth.js
+2018-07-06 14:11:00 - 请求路径：/webjars/springfox-swagger-ui/springfox.js
+2018-07-06 14:11:00 - 请求路径：/webjars/springfox-swagger-ui/images/logo_small.png
+2018-07-06 14:11:00 - 请求路径：/webjars/springfox-swagger-ui/css/print.css
+2018-07-06 14:11:01 - 请求路径：/swagger-resources/configuration/ui
+2018-07-06 14:11:01 - 请求路径：/swagger-resources
+2018-07-06 14:11:01 - 请求路径：/swagger-resources/configuration/security
+2018-07-06 14:11:11 - 请求路径：/webjars/springfox-swagger-ui/images/throbber.gif
+2018-07-06 14:11:23 - 请求路径：/apiM/patient/list
+2018-07-06 14:11:23 - 请求路径：/apiM/patient/list
+2018-07-06 14:13:50 - 请求路径：/apiM/platform/save
+2018-07-06 14:15:38 - 请求路径：/apiM/platform/getListData
+2018-07-06 14:16:02 - 请求路径：/apiM/platform/save
+2018-07-06 14:16:12 - 请求路径：/apiM/platform/getListData
+2018-07-06 14:20:43 - 请求路径：/apiM/platform/save
+2018-07-06 14:21:35 - 请求路径：/apiM/platform/save
+2018-07-06 14:22:36 - Starting Application on SKY-20170913ZDM with PID 5360 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
+2018-07-06 14:22:36 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-07-06 14:22:36 - The following profiles are active: dev
+2018-07-06 14:22:45 - Started Application in 10.307 seconds (JVM running for 14.888)
+2018-07-06 14:22:58 - 请求路径：/apiM/platform/save
+2018-07-06 14:41:27 - Starting Application on SKY-20170913ZDM with PID 7632 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
+2018-07-06 14:41:27 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-07-06 14:41:27 - The following profiles are active: dev
+2018-07-06 14:41:38 - Started Application in 11.362 seconds (JVM running for 14.34)
+2018-07-06 14:42:04 - 请求路径：/apiM/platform/save
+2018-07-06 14:42:47 - 请求路径：/apiM/platform/getListData
+2018-07-06 14:43:12 - 请求路径：/apiM/platform/save
+2018-07-06 14:43:22 - 请求路径：/apiM/platform/getListData
+2018-07-06 14:46:33 - Starting Application on SKY-20170913ZDM with PID 10012 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
+2018-07-06 14:46:33 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-07-06 14:46:33 - The following profiles are active: dev
+2018-07-06 14:46:42 - Started Application in 10.013 seconds (JVM running for 12.314)
+2018-07-06 14:46:51 - 请求路径：/apiM/platform/save
+2018-07-06 14:47:00 - 请求路径：/apiM/platform/getListData
+2018-07-06 14:47:04 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.medicine.domain.dtoAndFrom.menu.CdmManager.platformToCdmManagerConvert(CdmManager.java:37)
-	at com.medicine.service.impl.PlatformManagerServiceImpl.getManager(PlatformManagerServiceImpl.java:86)
-	at com.medicine.service.impl.PlatformManagerServiceImpl.lambda$findByManager$0(PlatformManagerServiceImpl.java:75)
+	at com.medicine.domain.dtoAndFrom.menu.FjManager.platformToCdmManagerConvert(FjManager.java:42)
+	at com.medicine.service.impl.PlatformManagerServiceImpl.getFjManager(PlatformManagerServiceImpl.java:223)
+	at com.medicine.service.impl.PlatformManagerServiceImpl.getManagerMap(PlatformManagerServiceImpl.java:189)
+	at com.medicine.service.impl.PlatformManagerServiceImpl.lambda$findByManager$2(PlatformManagerServiceImpl.java:93)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at com.medicine.service.impl.PlatformManagerServiceImpl.findByManager(PlatformManagerServiceImpl.java:67)
+	at com.medicine.service.impl.PlatformManagerServiceImpl.findByManager(PlatformManagerServiceImpl.java:93)
 	at com.medicine.web.PlatformManagerController.findByManager(PlatformManagerController.java:44)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -430,15 +117,16 @@ java.lang.NullPointerException: null
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
-2018-07-05 16:34:09 - 请求路径：/error
-2018-07-05 16:34:36 - 请求路径：/apiM/platform/getListData
-2018-07-05 16:35:40 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+2018-07-06 14:47:04 - 请求路径：/error
+2018-07-06 14:47:43 - 请求路径：/apiM/platform/getListData
+2018-07-06 14:48:12 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
 java.lang.NullPointerException: null
-	at com.medicine.domain.dtoAndFrom.menu.CdmManager.platformToCdmManagerConvert(CdmManager.java:37)
-	at com.medicine.service.impl.PlatformManagerServiceImpl.getManager(PlatformManagerServiceImpl.java:86)
-	at com.medicine.service.impl.PlatformManagerServiceImpl.lambda$findByManager$0(PlatformManagerServiceImpl.java:75)
+	at com.medicine.domain.dtoAndFrom.menu.FjManager.platformToCdmManagerConvert(FjManager.java:42)
+	at com.medicine.service.impl.PlatformManagerServiceImpl.getFjManager(PlatformManagerServiceImpl.java:223)
+	at com.medicine.service.impl.PlatformManagerServiceImpl.getManagerMap(PlatformManagerServiceImpl.java:189)
+	at com.medicine.service.impl.PlatformManagerServiceImpl.lambda$findByManager$2(PlatformManagerServiceImpl.java:93)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
-	at com.medicine.service.impl.PlatformManagerServiceImpl.findByManager(PlatformManagerServiceImpl.java:67)
+	at com.medicine.service.impl.PlatformManagerServiceImpl.findByManager(PlatformManagerServiceImpl.java:93)
 	at com.medicine.web.PlatformManagerController.findByManager(PlatformManagerController.java:44)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -494,5 +182,259 @@ java.lang.NullPointerException: null
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
-2018-07-05 16:35:40 - 请求路径：/error
-2018-07-05 16:35:46 - 请求路径：/apiM/platform/getListData
+2018-07-06 14:48:12 - 请求路径：/error
+2018-07-06 14:50:49 - Starting Application on SKY-20170913ZDM with PID 9572 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
+2018-07-06 14:50:49 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-07-06 14:50:49 - The following profiles are active: dev
+2018-07-06 14:50:59 - Started Application in 11.658 seconds (JVM running for 13.581)
+2018-07-06 14:51:19 - 请求路径：/apiM/platform/getListData
+2018-07-06 14:51:40 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.medicine.domain.dtoAndFrom.menu.FjManager.platformToCdmManagerConvert(FjManager.java:42)
+	at com.medicine.service.impl.PlatformManagerServiceImpl.getFjManager(PlatformManagerServiceImpl.java:224)
+	at com.medicine.service.impl.PlatformManagerServiceImpl.getManagerMap(PlatformManagerServiceImpl.java:190)
+	at com.medicine.service.impl.PlatformManagerServiceImpl.lambda$findByManager$2(PlatformManagerServiceImpl.java:94)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at com.medicine.service.impl.PlatformManagerServiceImpl.findByManager(PlatformManagerServiceImpl.java:94)
+	at com.medicine.web.PlatformManagerController.findByManager(PlatformManagerController.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-07-06 14:51:40 - 请求路径：/error
+2018-07-06 14:53:00 - 请求路径：/apiM/platform/save
+2018-07-06 14:53:21 - 请求路径：/apiM/platform/getListData
+2018-07-06 14:53:45 - 请求路径：/apiM/platform/delete
+2018-07-06 14:54:20 - 请求路径：/apiM/patient/list
+2018-07-06 14:54:20 - 请求路径：/apiM/patient/list
+2018-07-06 15:00:03 - 请求路径：/apiM/patient/list
+2018-07-06 15:00:03 - 请求路径：/apiM/patient/list
+2018-07-06 15:00:10 - 请求路径：/apiM/patient/list
+2018-07-06 15:13:54 - Starting Application on SKY-20170913ZDM with PID 3600 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
+2018-07-06 15:13:54 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-07-06 15:13:55 - The following profiles are active: dev
+2018-07-06 15:14:04 - Started Application in 10.873 seconds (JVM running for 12.504)
+2018-07-06 15:14:26 - Starting Application on SKY-20170913ZDM with PID 5676 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
+2018-07-06 15:14:26 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-07-06 15:14:26 - The following profiles are active: dev
+2018-07-06 15:14:37 - Started Application in 11.786 seconds (JVM running for 13.951)
+2018-07-06 15:14:39 - 请求路径：/null/swagger-resources/configuration/ui
+2018-07-06 15:14:39 - 请求路径：/error
+2018-07-06 15:14:44 - 请求路径：/null/swagger-resources/configuration/ui
+2018-07-06 15:14:44 - 请求路径：/error
+2018-07-06 15:14:45 - 请求路径：/null/swagger-resources/configuration/ui
+2018-07-06 15:14:45 - 请求路径：/error
+2018-07-06 15:14:50 - 请求路径：/swagger-resources/configuration/ui
+2018-07-06 15:14:50 - 请求路径：/swagger-resources
+2018-07-06 15:14:51 - 请求路径：/swagger-resources/configuration/security
+2018-07-06 15:14:59 - 请求路径：/apiM/platform/save
+2018-07-06 15:15:13 - 请求路径：/apiM/platform/getZyName
+2018-07-06 15:16:05 - 请求路径：/apiM/platform/save
+2018-07-06 15:16:17 - 请求路径：/apiM/platform/getZyName
+2018-07-06 15:17:33 - Starting Application on SKY-20170913ZDM with PID 9520 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
+2018-07-06 15:17:33 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-07-06 15:17:33 - The following profiles are active: dev
+2018-07-06 15:17:42 - Started Application in 9.857 seconds (JVM running for 11.674)
+2018-07-06 15:18:22 - 请求路径：/apiM/platform/getZyName
+2018-07-06 15:18:39 - 请求路径：/apiM/platform/save
+2018-07-06 15:18:46 - 请求路径：/apiM/platform/getZyName
+2018-07-06 15:55:58 - Starting Application on SKY-20170913ZDM with PID 9960 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
+2018-07-06 15:55:58 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-07-06 15:55:58 - The following profiles are active: dev
+2018-07-06 15:56:08 - Started Application in 12.103 seconds (JVM running for 16.781)
+2018-07-06 15:56:11 - 请求路径：/swagger-ui.html/swagger-resources/configuration/ui
+2018-07-06 15:56:11 - 请求路径：/error
+2018-07-06 15:56:12 - 请求路径：/null/swagger-resources/configuration/ui
+2018-07-06 15:56:12 - 请求路径：/error
+2018-07-06 15:56:13 - 请求路径：/null/swagger-resources/configuration/ui
+2018-07-06 15:56:13 - 请求路径：/error
+2018-07-06 15:56:13 - 请求路径：/null/swagger-resources/configuration/ui
+2018-07-06 15:56:13 - 请求路径：/error
+2018-07-06 15:56:13 - 请求路径：/null/swagger-resources/configuration/ui
+2018-07-06 15:56:13 - 请求路径：/error
+2018-07-06 15:56:13 - 请求路径：/null/swagger-resources/configuration/ui
+2018-07-06 15:56:13 - 请求路径：/error
+2018-07-06 15:56:13 - 请求路径：/null/swagger-resources/configuration/ui
+2018-07-06 15:56:13 - 请求路径：/error
+2018-07-06 15:56:14 - 请求路径：/null/swagger-resources/configuration/ui
+2018-07-06 15:56:14 - 请求路径：/error
+2018-07-06 15:56:14 - 请求路径：/null/swagger-resources/configuration/ui
+2018-07-06 15:56:14 - 请求路径：/error
+2018-07-06 15:56:14 - 请求路径：/null/swagger-resources/configuration/ui
+2018-07-06 15:56:14 - 请求路径：/error
+2018-07-06 15:56:14 - 请求路径：/null/swagger-resources/configuration/ui
+2018-07-06 15:56:14 - 请求路径：/error
+2018-07-06 15:56:14 - 请求路径：/null/swagger-resources/configuration/ui
+2018-07-06 15:56:14 - 请求路径：/error
+2018-07-06 15:56:21 - 请求路径：/swagger-resources/configuration/ui
+2018-07-06 15:56:21 - 请求路径：/swagger-resources
+2018-07-06 15:56:21 - 请求路径：/swagger-resources/configuration/security
+2018-07-06 15:56:44 - 请求路径：/apiM/component/save
+2018-07-06 15:57:16 - Starting Application on SKY-20170913ZDM with PID 6944 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
+2018-07-06 15:57:16 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-07-06 15:57:16 - The following profiles are active: dev
+2018-07-06 15:57:27 - Started Application in 11.336 seconds (JVM running for 14.527)
+2018-07-06 15:57:33 - 请求路径：/swagger-resources/configuration/ui
+2018-07-06 15:57:33 - 请求路径：/swagger-resources
+2018-07-06 15:57:33 - 请求路径：/swagger-resources/configuration/security
+2018-07-06 15:57:42 - 请求路径：/apiM/component/findByName
+2018-07-06 15:57:42 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: Value must not be null!; nested exception is java.lang.IllegalArgumentException: Value must not be null!] with root cause
+java.lang.IllegalArgumentException: Value must not be null!
+	at org.springframework.util.Assert.notNull(Assert.java:193)
+	at org.springframework.data.jpa.repository.query.ParameterMetadataProvider$ParameterMetadata.prepare(ParameterMetadataProvider.java:227)
+	at org.springframework.data.jpa.repository.query.QueryParameterSetterFactory$CriteriaQueryParameterSetterFactory.getAndPrepare(QueryParameterSetterFactory.java:289)
+	at org.springframework.data.jpa.repository.query.QueryParameterSetterFactory$CriteriaQueryParameterSetterFactory.lambda$create$0(QueryParameterSetterFactory.java:280)
+	at org.springframework.data.jpa.repository.query.QueryParameterSetter$NamedOrIndexedQueryParameterSetter.setParameter(QueryParameterSetter.java:82)
+	at org.springframework.data.jpa.repository.query.ParameterBinder.lambda$bind$0(ParameterBinder.java:79)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1080)
+	at org.springframework.data.jpa.repository.query.ParameterBinder.bind(ParameterBinder.java:79)
+	at org.springframework.data.jpa.repository.query.ParameterBinder.bind(ParameterBinder.java:74)
+	at org.springframework.data.jpa.repository.query.ParameterBinder.bindAndPrepare(ParameterBinder.java:96)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery$QueryPreparer.invokeBinding(PartTreeJpaQuery.java:244)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery$QueryPreparer.createQuery(PartTreeJpaQuery.java:171)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.doCreateQuery(PartTreeJpaQuery.java:92)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.createQuery(AbstractJpaQuery.java:210)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:129)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:91)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:136)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:125)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:590)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:578)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:135)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy107.findByNameLike(Unknown Source)
+	at com.medicine.service.impl.ComponentManagerServiceImpl.findByName(ComponentManagerServiceImpl.java:19)
+	at com.medicine.web.ComponentManagerController.findByName(ComponentManagerController.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2018-07-06 15:57:42 - 请求路径：/error
+2018-07-06 15:59:38 - Starting Application on SKY-20170913ZDM with PID 4436 (D:\workspace\medicine\chinese-medicine\target\classes started by Administrator in D:\workspace\medicine\chinese-medicine)
+2018-07-06 15:59:38 - Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-07-06 15:59:38 - The following profiles are active: dev
+2018-07-06 15:59:49 - Started Application in 12.853 seconds (JVM running for 15.024)
+2018-07-06 15:59:51 - 请求路径：/apiM/patient/list
+2018-07-06 15:59:51 - 请求路径：/apiM/patient/list
+2018-07-06 16:00:02 - 请求路径：/apiM/component/findByName
+2018-07-06 16:00:09 - 请求路径：/apiM/component/findByName
+2018-07-06 16:00:15 - 请求路径：/apiM/component/findByName
+2018-07-06 16:01:18 - 请求路径：/apiM/component/findByName
+2018-07-06 16:01:22 - 请求路径：/apiM/component/findByName
+2018-07-06 16:01:35 - 请求路径：/apiM/component/findByName
+2018-07-06 16:01:39 - 请求路径：/apiM/component/findByName
+2018-07-06 16:01:42 - 请求路径：/apiM/component/findByName

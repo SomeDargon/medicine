@@ -10,6 +10,7 @@ import com.medicine.service.PlatformManagerService;
 import com.medicine.util.JsonResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import jdk.nashorn.internal.objects.annotations.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -50,4 +51,11 @@ public class PlatformManagerController {
         platformManagerService.deletePlatAndPlatDate(id);
         return JsonResult.builder().data("删除成功").build();
     }
+
+    @ApiOperation(value = "查询中医数据", notes = "方剂管理使用")
+    @GetMapping(value = "/getZyName")
+    public List<String> getZyName() {
+        return platformManagerService.findByZyName();
+    }
+
 }

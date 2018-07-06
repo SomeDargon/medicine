@@ -48,4 +48,14 @@ public class PlatformManagerData extends BaseEntity {
 
     private String x14;
 
+    private String x15;
+
+    private String x16;
+
+    private String x17;
+
+    private String x18;
+
+    private String x19;
+
 }

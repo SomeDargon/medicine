@@ -23,6 +23,17 @@ public class WdmManager extends SuperManager {
     public  SuperManager platformToCdmManagerConvert(PlatformManager platformManager, PlatformManagerData platformManagerData) {
         WdmManager cdmManager = new WdmManager();
         BeanUtils.copyProperties(platformManager, cdmManager);
+        cdmManager.setKey(platformManager.getId());
+        cdmManager.setSysType(platformManager.getMenuType());
+        cdmManager.setBy(platformManagerData.getX1());
+        cdmManager.setFbjz(platformManagerData.getX2());
+        cdmManager.setGk(platformManagerData.getX3());
+        cdmManager.setJb(platformManagerData.getX4());
+        cdmManager.setJbzd(platformManagerData.getX5());
+        cdmManager.setLhjc(platformManagerData.getX6());
+        cdmManager.setTz(platformManagerData.getX7());
+        cdmManager.setYh(platformManagerData.getX8());
+
         return cdmManager;
     }
 
@@ -30,20 +41,14 @@ public class WdmManager extends SuperManager {
     public  PlatformManagerData managerToPlatformConvertData(SuperManager superManager) {
         WdmManager wdmManager = (WdmManager) superManager;
         PlatformManagerData platformManagerData = new PlatformManagerData();
-//        platformManagerData.setX1(cdmManager.getBx());
-//        platformManagerData.setX2(cdmManager.getBy());
-//        platformManagerData.setX3(cdmManager.getBzyd());
-//        platformManagerData.setX4(cdmManager.getFxlz());
-//        platformManagerData.setX5(cdmManager.getGk());
-//        platformManagerData.setX6(cdmManager.getGlzh());
-//        platformManagerData.setX7(cdmManager.getGlzz());
-//        platformManagerData.setX8(cdmManager.getJbzd());
-//        platformManagerData.setX9(cdmManager.getLdyjls());
-//        platformManagerData.setX10(cdmManager.getQt());
-//        platformManagerData.setX11(cdmManager.getXgyxjb());
-//        platformManagerData.setX12(cdmManager.getZdyd());
-//        platformManagerData.setX13(cdmManager.getZgyh());
-//        platformManagerData.setX14(cdmManager.getZlyz());
+        platformManagerData.setX1(wdmManager.getBy());
+        platformManagerData.setX2(wdmManager.getFbjz());
+        platformManagerData.setX3(wdmManager.getGk());
+        platformManagerData.setX4(wdmManager.getJb());
+        platformManagerData.setX5(wdmManager.getJbzd());
+        platformManagerData.setX6(wdmManager.getLhjc());
+        platformManagerData.setX7(wdmManager.getTz());
+        platformManagerData.setX8(wdmManager.getYh());
         return platformManagerData;
     }
 

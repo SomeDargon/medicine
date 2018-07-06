@@ -11,4 +11,6 @@ public interface PlatformManagerService {
     List<Map<String, Object>> findByManager(String type);
 
     void deletePlatAndPlatDate(Long id);
+
+    List<String> findByZyName();
 }
