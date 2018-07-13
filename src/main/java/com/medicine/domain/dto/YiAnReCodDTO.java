@@ -6,9 +6,11 @@ import com.medicine.domain.dto.attiendRecode.DiagnosisOfZhDTO;
 import com.medicine.domain.dto.attiendRecode.diagnosisAndtreatment.DiagnosisAndtreatmentDTO;
 import com.medicine.domain.dto.attiendRecode.orther.OrtherDTO;
 import com.medicine.util.Date2LongSerializer;
+import lombok.Data;
 
 import java.util.Date;
 
+@Data
 public class YiAnReCodDTO {
 
     private Long id;
@@ -68,4 +70,8 @@ public class YiAnReCodDTO {
 
     // TODO
     private Integer age = 10;
+
+
+
+
 }

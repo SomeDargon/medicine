@@ -26,6 +26,7 @@ public class PatientController {
 
     @ApiOperation(value = "查询分页", notes = "现在不知道要传什么值，未做条件查询")
     @GetMapping(value = "/list")
+    @ResponseBody
     public Page<PatientDTO> findAllPage(
             @RequestParam(value = "page", defaultValue = "1", required = false) Integer page,
             @RequestParam(value = "pageSize", defaultValue = "5", required = false) Integer size,

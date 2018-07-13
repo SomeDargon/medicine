@@ -1,6 +1,5 @@
 package com.medicine.domain.dto;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.medicine.util.Date2LongSerializer;
 import io.swagger.annotations.ApiModel;
@@ -27,6 +26,20 @@ public class PatientDTO {
     private Integer age;
 
     private Integer time;
+
+    private String birthplace;
+
+    private String zipCode;
+
+    private Integer marriage;
+
+    private String citizenship;
+
+    private String profession;
+
+    private String ethnic;
+
+    private Double weight;
 
     @ApiModelProperty(name = "首次就诊时间")
     @JsonSerialize(using = Date2LongSerializer.class)

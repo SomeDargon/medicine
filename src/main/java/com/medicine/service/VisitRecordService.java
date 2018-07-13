@@ -16,5 +16,5 @@ public interface VisitRecordService {
 
     PatientRecodDTO findById(Long id);
 
-    Page<YiAnReCodDTO> findByNameAndVisitDate(Pageable pageable, String name, Date visitDate);
+    Page<YiAnReCodDTO> findByNameAndVisitDate(Pageable pageable, String name, String visitDate);
 }

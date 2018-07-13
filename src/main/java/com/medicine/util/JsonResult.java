@@ -14,14 +14,22 @@ public class JsonResult<T> {
 
     private final String error;
 
+    private final Integer status;
+
+
     private JsonResult(JsonResultBuilder<T> builder) {
         this.success = builder.success;
         this.data = builder.data;
         this.error = builder.error;
+        this.status = builder.status;
     }
 
-    public static <T>JsonResult.JsonResultBuilder<T> builder(){
+    public static <T> JsonResult.JsonResultBuilder<T> builder(){
         return new JsonResultBuilder<>();
+    }
+
+    public Integer getStatus() {
+        return status;
     }
 
     public boolean isSuccess() {
@@ -53,6 +61,8 @@ public class JsonResult<T> {
 
         private String error;
 
+        private Integer status = 200;
+
         private JsonResultBuilder() {
 
         }
@@ -60,12 +70,14 @@ public class JsonResult<T> {
         public JsonResultBuilder error(String error) {
             this.error = error;
             this.success = false;
+            this.status = 500;
             return this;
         }
 
         public JsonResultBuilder data(T data) {
             this.data = data;
             this.success = true;
+            this.status = 200;
             return this;
         }
 

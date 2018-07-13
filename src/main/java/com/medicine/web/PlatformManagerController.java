@@ -78,10 +78,9 @@ public class PlatformManagerController {
     }
 
     /** 字典平台管理 **/
-    @ApiOperation(value = "字典平台 查询")
+    @ApiOperation(value = "字典平台 查询", notes = "/findDictionary")
     @GetMapping(value = "/findDictionary")
-    @ApiImplicitParam(name = "sysType", value = "类型")
-    public List<Dictionary> findDictionary(@RequestParam String sysType) {
+    public List<Dictionary> findDictionary(@RequestParam(required = false) String sysType) {
         return dictionaryService.findBySysType(sysType);
     }
 
@@ -99,36 +98,36 @@ public class PlatformManagerController {
     }
 
     /** 成分平台管理 **/
-    @ApiOperation(value = "分页查询", notes = "成分平台 根据name查询")
-    @GetMapping(value = "/findComponentManagerSByName")
-    public List<ComponentManager> findComponentManagerSByName(
+    @ApiOperation(value = "成分平台 根据name查询")
+    @GetMapping(value = "/findComponentByName")
+    public List<ComponentManager> findComponentByName(
             @RequestParam(required = false) String name) {
         return  componentManagerService.findByName(name);
     }
 
     @ApiOperation(value = "成分平台 删除")
-    @DeleteMapping(value = "/deleteById")
-    public JsonResult<String> deleteComponentManagerSById(@RequestParam Long id) {
+    @DeleteMapping(value = "/deleteComponentManagerById")
+    public JsonResult<String> deleteComponentManagerById(@RequestParam Long id) {
         componentManagerService.delete(id);
         return JsonResult.builder().data("删除成功").build();
     }
 
     @ApiOperation(value = "成分平台 添加修改")
-    @PostMapping(value = "/saveComponentManagerS")
-    public JsonResult<ComponentManager> saveComponentManagerS(@RequestBody ComponentManager componentManager) {
+    @PostMapping(value = "/saveComponentManager")
+    public JsonResult<ComponentManager> saveComponentManager(@RequestBody ComponentManager componentManager) {
         return JsonResult.builder().data(componentManagerService.save(componentManager)).build();
     }
 
     /** 医案管理 **/
-    @ApiOperation(value = "查询患者详情记录")
-    @GetMapping("/info")
+    @ApiOperation(value = "医案管理", notes = "/findPatiendAll")
+    @GetMapping("/findPatiendAll")
     public Page<YiAnReCodDTO> findPatiendAll(
             @RequestParam(required = false) String name,
-            @RequestParam(required = false) Date visitDate,
-            @RequestParam(required = false, defaultValue = "1") Integer size,
+            @RequestParam(required = false) String visitDate,
+            @RequestParam(value = "pageSize", required = false, defaultValue = "1") Integer size,
             @RequestParam(required = false, defaultValue = "10") Integer page
     ) {
-        PageRequest pageRequest = PageRequest.of(size-1, page);
+        PageRequest pageRequest = PageRequest.of(page-1, size);
         return visitRecordService.findByNameAndVisitDate(pageRequest, name, visitDate);
     }
 

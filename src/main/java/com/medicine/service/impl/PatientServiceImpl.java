@@ -6,12 +6,15 @@ import com.medicine.domain.dto.PatientDTO;
 import com.medicine.domain.from.PatientFrom;
 import com.medicine.domain.repository.PatientRepository;
 import com.medicine.service.PatientService;
+import com.medicine.util.DatetimeUtil;
 import io.netty.util.internal.StringUtil;
+import javafx.scene.input.DataFormat;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.*;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -25,7 +28,7 @@ public class PatientServiceImpl implements PatientService {
     @Override
     public Page<PatientDTO> findPatientCriteria(Pageable pageable, String name) {
         Page<Patient> patients = StringUtils.isEmpty(name)?
-                patientRepository.findAll(pageable):patientRepository.findByNameLike(name, pageable);
+                patientRepository.findAll(pageable):patientRepository.findByNameLike("%"+name+"%", pageable);
         List<PatientDTO> PatientDTOS =
                 PatientToPatientDTOConverter.converter(patients.getContent());
 
@@ -53,13 +56,19 @@ public class PatientServiceImpl implements PatientService {
     }
 
     @Override
-    public Page<Patient> findAll(Pageable pageable, String name, Date visitDate) {
+    public Page<Patient> findAll(Pageable pageable, String name, String visitDate) {
+        if (StringUtils.isEmpty(name) && StringUtils.isEmpty(visitDate)) {
+           return patientRepository.findAll(pageable);
+        }
         Patient patient = new Patient();
-        patient.setVisitTime(visitDate);
-        patient.setName(name);
+        if (!StringUtils.isEmpty(visitDate)) {
+           patient.setVisitTime(DatetimeUtil.parseDate(visitDate));
+        }
+        if (!StringUtils.isEmpty(name)) {
+            patient.setName(name);
+        }
         Example<Patient> example = Example.of(patient);
-        Page<Patient> patients = patientRepository.findAll(example, pageable);
-        return patients;
+        return patientRepository.findAll(example, pageable);
     }
 
 

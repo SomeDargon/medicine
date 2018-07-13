@@ -44,8 +44,6 @@ public class PatientFrom {
 
     private String address;
 
-    @ApiModelProperty(value = "就诊时间")
-    private Date visitTime;
 
     public static Patient patientFormToPatient(PatientFrom patientForm) {
         Patient  patient = new Patient();

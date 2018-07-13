@@ -15,6 +15,7 @@ import com.medicine.domain.from.dome.DiagnosisOfZhFrom;
 import com.medicine.domain.from.dome.OrtherFrom;
 import com.medicine.domain.repository.VisitRecordRepository;
 import com.medicine.service.*;
+import com.medicine.util.StringUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -119,7 +120,7 @@ public class VisitRecordServiceImpl implements VisitRecordService {
     }
 
     @Override
-    public Page<YiAnReCodDTO> findByNameAndVisitDate(Pageable pageable, String name, Date visitDate) {
+    public Page<YiAnReCodDTO> findByNameAndVisitDate(Pageable pageable, String name, String visitDate) {
         List<YiAnReCodDTO> yiAnReCodDTOS = new ArrayList<>();
         Page<Patient> patientPage = patientService.findAll(pageable, name, visitDate);
         List<Patient> patients = patientPage.getContent();
@@ -137,10 +138,10 @@ public class VisitRecordServiceImpl implements VisitRecordService {
                     }
                 }
                 if (visitRecord != null) {
-                    BeanUtils.copyProperties(visitRecord, yiAnReCodDTO);
+                    BeanUtils.copyProperties(e, yiAnReCodDTO);
+                    yiAnReCodDTOS.add(yiAnReCodDTO);
                 }
-                BeanUtils.copyProperties(e, yiAnReCodDTO);
-                yiAnReCodDTOS.add(yiAnReCodDTO);
+
             });
         }
         return new PageImpl(yiAnReCodDTOS, pageable, patientPage.getTotalElements());

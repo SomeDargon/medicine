@@ -21,7 +21,7 @@ public interface PatientService {
 
     List<Patient> findByPhone(String phone);
 
-    Page<Patient> findAll(Pageable pageable, String name, Date visitDate);
+    Page<Patient> findAll(Pageable pageable, String name, String visitDate);
 
 
 }
