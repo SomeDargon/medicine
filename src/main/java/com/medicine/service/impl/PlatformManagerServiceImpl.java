@@ -65,7 +65,7 @@ public class PlatformManagerServiceImpl implements PlatformManagerService {
             if (platformManagerData != null) {
                 platformManagerDataRepository.delete(platformManagerData);
             }
-            if (platformManager.getMenuType().equals("fj")) {
+            if (platformManager.getSysType().equals("fj")) {
                 List<Prescription> prescriptions = prescriptionRepository.findByMenuId(platId);
                 prescriptions.forEach(e->prescriptionRepository.delete(e));
             }
@@ -76,7 +76,7 @@ public class PlatformManagerServiceImpl implements PlatformManagerService {
             final Long platId = platformManager.getId();
             platformManagerData.setPmId(platId);
             platformManagerDataRepository.save(platformManagerData);
-            if (platformManager.getMenuType().equals("fj")) {
+            if (platformManager.getSysType().equals("fj")) {
                FjManager fjManager = (FjManager)superManager;
                List<Prescription> prescriptions = fjManager.getCf();
                prescriptions.forEach(e->{
@@ -90,7 +90,7 @@ public class PlatformManagerServiceImpl implements PlatformManagerService {
 
     @Override
     public List<Map<String, Object>> findByManager(String type) {
-        List<PlatformManager> platformManagers = platformManagerRepository.findByMenuType(type);
+        List<PlatformManager> platformManagers = platformManagerRepository.findBySysType(type);
         List<Map<String, Object>> maps = new ArrayList<>();
         platformManagers.forEach(e ->maps.add(getManagerMap(e)));
         return maps;
@@ -101,7 +101,7 @@ public class PlatformManagerServiceImpl implements PlatformManagerService {
         Map<String, Object> map = new HashMap<>();
         if (e.getIsMenu().equals(0)) {
             PlatformManagerData platformManagerData = platformManagerDataRepository.findByPmId(e.getId());
-            switch (e.getMenuType()) {
+            switch (e.getSysType()) {
                 case "cdm":
                     superManager = new CdmManager();
                     map = JSON.parseObject(
@@ -230,21 +230,39 @@ public class PlatformManagerServiceImpl implements PlatformManagerService {
     }
     @Override
     public void deletePlatAndPlatDate(Long id) {
-        platformManagerRepository.deleteById(id);
-        PlatformManagerData platformManagerData = platformManagerDataRepository.findByPmId(id);
-        if (platformManagerData != null) {
-            platformManagerDataRepository.delete(platformManagerData);
+        PlatformManager platformManager = platformManagerRepository.getOne(id);
+        deleteSubMenus(platformManager);
+    }
+
+    /**
+     * 递归实现删除菜单
+     * @param platformManager
+     */
+    public void deleteSubMenus(PlatformManager platformManager) {
+        Long id = platformManager.getId();
+        if (platformManager.getIsMenu().equals(1)) {
+            List<PlatformManager> platformManagers =
+                    platformManagerRepository.findByFClass(id);
+            if (platformManagers.size() > 0) {
+                platformManagers.forEach(this::deleteSubMenus);
+            }
+        } else {
+            PlatformManagerData platformManagerData = platformManagerDataRepository.findByPmId(id);
+            if (platformManagerData != null) {
+                platformManagerDataRepository.delete(platformManagerData);
+            }
+            List<Prescription> prescriptions = prescriptionRepository.findByMenuId(id);
+            if (prescriptions.size() > 0) {
+                prescriptions.forEach(e->prescriptionRepository.delete(e));
+            }
         }
-        List<Prescription> prescriptions = prescriptionRepository.findByMenuId(id);
-        if (prescriptions.size() > 0) {
-            prescriptions.forEach(e->prescriptionRepository.delete(e));
-        }
+        platformManagerRepository.delete(platformManager);
     }
 
     @Override
     public List<String> findByZyName() {
         List<PlatformManager> platformManagers =
-                platformManagerRepository.findByIsMenuAndMenuType(
+                platformManagerRepository.findByIsMenuAndSysType(
                         MenuStatus.NOT_MENU_STATUS, "zy"
                 );
         List<String> list = new ArrayList<>();

@@ -38,6 +38,9 @@ public class VisitRecord extends BaseEntity {
     @JoinColumn(name = "other_id")
     private OtherMessage otherMessage;
 
+    // 0：表示不是医案管理 1：表示是
+    private Integer status;
+
     @Override
     public String toString() {
         return "VisitRecord{" +

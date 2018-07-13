@@ -18,7 +18,6 @@ public class FjzzManager extends SuperManager {
         FjzzManager fjzzManager = new FjzzManager();
         BeanUtils.copyProperties(platformManager, fjzzManager);
         fjzzManager.setKey(platformManager.getId());
-        fjzzManager.setSysType(platformManager.getMenuType());
         fjzzManager.setBm(platformManagerData.getX1());
         fjzzManager.setBz(platformManagerData.getX2());
         fjzzManager.setMs(platformManagerData.getX3());

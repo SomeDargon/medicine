@@ -19,7 +19,6 @@ public class MzManager extends SuperManager{
         MzManager mzManager = new MzManager();
         BeanUtils.copyProperties(platformManager, mzManager);
         mzManager.setKey(platformManager.getId());
-        mzManager.setSysType(platformManager.getMenuType());
         mzManager.setBm(platformManagerData.getX1());
         mzManager.setBz(platformManagerData.getX2());
         mzManager.setMs(platformManagerData.getX3());

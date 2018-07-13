@@ -15,6 +15,7 @@ public class PatientToPatientDTOConverter{
        PatientDTO patientDTO = new PatientDTO();
        BeanUtils.copyProperties(patient, patientDTO);
        patientDTO.setDate(patient.getFirstDate());
+       patientDTO.setEndDate(patient.getEndDate());
        return patientDTO;
     }
 

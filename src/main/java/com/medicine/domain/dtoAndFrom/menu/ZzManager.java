@@ -29,7 +29,6 @@ public class ZzManager extends SuperManager {
         ZzManager zzManager = new ZzManager();
         BeanUtils.copyProperties(platformManager, zzManager);
         zzManager.setKey(platformManager.getId());
-        zzManager.setSysType(platformManager.getMenuType());
         zzManager.setBx(platformManagerData.getX1());
         zzManager.setBy(platformManagerData.getX2());
         zzManager.setBzyd(platformManagerData.getX3());

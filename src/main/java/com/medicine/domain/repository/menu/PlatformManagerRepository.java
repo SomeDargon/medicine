@@ -8,7 +8,9 @@ import java.util.List;
 
 public interface PlatformManagerRepository extends JpaRepository<PlatformManager, Long> {
 
-    List<PlatformManager> findByMenuType(String menuType);
+    List<PlatformManager> findBySysType(String sysType);
 
-    List<PlatformManager> findByIsMenuAndMenuType(Integer isMenu, String MenuType);
+    List<PlatformManager> findByIsMenuAndSysType(Integer isMenu, String sysType);
+
+    List<PlatformManager> findByFClass(Long fClass);
 }

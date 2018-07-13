@@ -23,6 +23,7 @@ public class DiagnosisOfWeFrom {
         DiagnosisOfWe diagnosisOfWe = new DiagnosisOfWe();
         diagnosisOfWe.setTigejiancha(diagnosisOfWeFrom.getTigejiancha());
         List<WesternMedicine> westernMedicines = diagnosisOfWeFrom.getWesternMedicines();
+        /** 多级关联需要把父级编号 放在子级中去 **/
         westernMedicines.forEach(e -> {
             e.setDOfWe(diagnosisOfWe);
             if (e.getImg() != null) {

@@ -33,7 +33,6 @@ public class CdmManager extends SuperManager {
         CdmManager cdmManager = new CdmManager();
         BeanUtils.copyProperties(platformManager, cdmManager);
         cdmManager.setKey(platformManager.getId());
-        cdmManager.setSysType(platformManager.getMenuType());
         cdmManager.setBx(platformManagerData.getX1());
         cdmManager.setBy(platformManagerData.getX2());
         cdmManager.setBzyd(platformManagerData.getX3());

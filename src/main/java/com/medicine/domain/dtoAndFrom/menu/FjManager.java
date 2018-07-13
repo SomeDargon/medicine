@@ -38,7 +38,6 @@ public class FjManager extends SuperManager {
         BeanUtils.copyProperties(platformManager, fjManager);
         fjManager.setCf(prescriptions);
         fjManager.setKey(platformManager.getId());
-        fjManager.setSysType(platformManager.getMenuType());
         fjManager.setBz(platformManagerData.getX1());
         fjManager.setCd(platformManagerData.getX2());
         fjManager.setCfly(platformManagerData.getX3());

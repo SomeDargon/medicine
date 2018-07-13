@@ -19,7 +19,6 @@ public class SzManager extends SuperManager{
         SzManager szManager = new SzManager();
         BeanUtils.copyProperties(platformManager, szManager);
         szManager.setKey(platformManager.getId());
-        szManager.setSysType(platformManager.getMenuType());
         szManager.setBm(platformManagerData.getX1());
         szManager.setBz(platformManagerData.getX2());
         szManager.setMs(platformManagerData.getX3());

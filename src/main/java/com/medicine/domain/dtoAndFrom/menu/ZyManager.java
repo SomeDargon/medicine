@@ -22,7 +22,6 @@ public class ZyManager extends SuperManager {
         ZyManager zyManager = new ZyManager();
         BeanUtils.copyProperties(platformManager, zyManager);
         zyManager.setKey(platformManager.getId());
-        zyManager.setSysType(platformManager.getMenuType());
         zyManager.setBz(platformManagerData.getX1());
         zyManager.setPzff(platformManagerData.getX2());
         zyManager.setYcbw(platformManagerData.getX3());

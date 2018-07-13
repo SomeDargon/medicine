@@ -24,7 +24,6 @@ public class SuperManager {
     public  PlatformManager managerToPlatformConvert(SuperManager cdmManager) {
         PlatformManager platformManager = new PlatformManager();
         BeanUtils.copyProperties(cdmManager, platformManager);
-        platformManager.setMenuType(cdmManager.getSysType());
         return platformManager;
     }
 

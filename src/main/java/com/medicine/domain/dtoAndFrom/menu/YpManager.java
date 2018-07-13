@@ -20,7 +20,6 @@ public class YpManager extends SuperManager {
         YpManager ypManager = new YpManager();
         BeanUtils.copyProperties(platformManager, ypManager);
         ypManager.setKey(platformManager.getId());
-        ypManager.setSysType(platformManager.getMenuType());
         ypManager.setBz(platformManagerData.getX1());
         ypManager.setPzff(platformManagerData.getX2());
         ypManager.setYcbw(platformManagerData.getX3());

@@ -19,7 +19,6 @@ public class ZhManager extends SuperManager {
         ZhManager cdmManager = new ZhManager();
         BeanUtils.copyProperties(platformManager, cdmManager);
         cdmManager.setKey(platformManager.getId());
-        cdmManager.setSysType(platformManager.getMenuType());
         cdmManager.setBm(platformManagerData.getX1());
         cdmManager.setBz(platformManagerData.getX2());
         cdmManager.setMs(platformManagerData.getX3());

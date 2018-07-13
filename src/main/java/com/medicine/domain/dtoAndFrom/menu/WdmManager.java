@@ -24,7 +24,6 @@ public class WdmManager extends SuperManager {
         WdmManager cdmManager = new WdmManager();
         BeanUtils.copyProperties(platformManager, cdmManager);
         cdmManager.setKey(platformManager.getId());
-        cdmManager.setSysType(platformManager.getMenuType());
         cdmManager.setBy(platformManagerData.getX1());
         cdmManager.setFbjz(platformManagerData.getX2());
         cdmManager.setGk(platformManagerData.getX3());

@@ -16,7 +16,6 @@ public class GxlxManager extends SuperManager {
         GxlxManager gxlxManager = new GxlxManager();
         BeanUtils.copyProperties(platformManager, gxlxManager);
         gxlxManager.setKey(platformManager.getId());
-        gxlxManager.setSysType(platformManager.getMenuType());
         gxlxManager.setBz(platformManagerData.getX1());
         return gxlxManager;
     }

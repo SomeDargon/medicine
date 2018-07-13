@@ -44,13 +44,16 @@ public class PatientFrom {
 
     private String address;
 
+    @ApiModelProperty(value = "就诊时间")
+    private Date visitTime;
+
     public static Patient patientFormToPatient(PatientFrom patientForm) {
         Patient  patient = new Patient();
         BeanUtils.copyProperties(patientForm, patient);
         patient.setTime(0);
         Date date = new Date();
         patient.setCreateDate(date);
-        patient.setVisitTime(date);
+        patient.setVisitTime(patient.getVisitTime()!= null?patient.getVisitTime():date);
         return patient;
     }
 }

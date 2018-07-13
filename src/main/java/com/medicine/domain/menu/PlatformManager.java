@@ -32,9 +32,8 @@ public class PlatformManager extends BaseEntity {
      *  方剂管理    fj    方剂主治管理  fjzz 症状管理     zz
      *  成分管理    cf
      */
-
-    @Column(name = "menu_type")
-    private String menuType;
+    @Column(name = "sys_type")
+    private String sysType;
 
 
     private String name;

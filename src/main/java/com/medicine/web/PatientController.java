@@ -10,6 +10,8 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -29,7 +31,8 @@ public class PatientController {
             @RequestParam(value = "pageSize", defaultValue = "5", required = false) Integer size,
             @RequestParam(value = "searchV", required = false) String name
     ) {
-        return patientService.findPatientCriteria(page - 1, size, name);
+        Pageable pageable = PageRequest.of(page-1, size);
+        return patientService.findPatientCriteria(pageable, name);
 
     }
 

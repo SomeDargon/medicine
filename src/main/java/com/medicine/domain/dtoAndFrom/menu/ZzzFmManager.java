@@ -18,7 +18,6 @@ public class ZzzFmManager extends SuperManager {
         ZzzFmManager zzzFmManager = new ZzzFmManager();
         BeanUtils.copyProperties(platformManager, zzzFmManager);
         zzzFmManager.setKey(platformManager.getId());
-        zzzFmManager.setSysType(platformManager.getMenuType());
         zzzFmManager.setBm(platformManagerData.getX1());
         zzzFmManager.setBz(platformManagerData.getX2());
         zzzFmManager.setMs(platformManagerData.getX3());

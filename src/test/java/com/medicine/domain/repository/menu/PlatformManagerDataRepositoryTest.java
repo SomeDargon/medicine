@@ -27,7 +27,6 @@ public class PlatformManagerDataRepositoryTest {
         PlatformManager platformManager = new PlatformManager();
         platformManager.setType(1);
         platformManager.setFClass(0L);
-        platformManager.setMenuType("cdm");
         platformManager.setIsMenu(0);
         platformManager = platformManagerRepository.save(platformManager);
         PlatformManagerData data = new PlatformManagerData();
