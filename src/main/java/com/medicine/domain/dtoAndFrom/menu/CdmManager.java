@@ -2,9 +2,12 @@ package com.medicine.domain.dtoAndFrom.menu;
 
 import com.medicine.domain.menu.PlatformManager;
 import com.medicine.domain.menu.PlatformManagerData;
+import com.medicine.util.CharacterUtils;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.beans.BeanUtils;
+
+import java.util.List;
 
 /**
  * 中医疾病管理
@@ -17,13 +20,13 @@ public class CdmManager extends SuperManager {
     private String bzyd;
     private String fxlz;
     private String gk;
-    private String glzh;
-    private String glzz;
+    private List<String> glzh;
+    private List<String> glzz;
     private Integer isMenu;
     private String jbzd;
     private String ldyjls;
     private String qt;
-    private String xgyxjb;
+    private List<String> xgyxjb;
     private String zdyd;
     private String zgyh;
     private String zlyz;
@@ -38,12 +41,12 @@ public class CdmManager extends SuperManager {
         cdmManager.setBzyd(platformManagerData.getX3());
         cdmManager.setFxlz(platformManagerData.getX4());
         cdmManager.setGk(platformManagerData.getX5());
-        cdmManager.setGlzh(platformManagerData.getX6());
-        cdmManager.setGlzz(platformManagerData.getX7());
+        cdmManager.setGlzh(CharacterUtils.stringTochars(platformManagerData.getX6()));
+        cdmManager.setGlzz(CharacterUtils.stringTochars(platformManagerData.getX7()));
         cdmManager.setJbzd(platformManagerData.getX8());
         cdmManager.setLdyjls(platformManagerData.getX9());
         cdmManager.setQt(platformManagerData.getX10());
-        cdmManager.setXgyxjb(platformManagerData.getX11());
+        cdmManager.setXgyxjb(CharacterUtils.stringTochars(platformManagerData.getX11()));
         cdmManager.setZdyd(platformManagerData.getX12());
         cdmManager.setZgyh(platformManagerData.getX13());
         cdmManager.setZlyz(platformManagerData.getX14());
@@ -59,12 +62,12 @@ public class CdmManager extends SuperManager {
         platformManagerData.setX3(cdmManager.getBzyd());
         platformManagerData.setX4(cdmManager.getFxlz());
         platformManagerData.setX5(cdmManager.getGk());
-        platformManagerData.setX6(cdmManager.getGlzh());
-        platformManagerData.setX7(cdmManager.getGlzz());
+        platformManagerData.setX6(CharacterUtils.charsToString(cdmManager.getGlzh()));
+        platformManagerData.setX7(CharacterUtils.charsToString(cdmManager.getGlzz()));
         platformManagerData.setX8(cdmManager.getJbzd());
         platformManagerData.setX9(cdmManager.getLdyjls());
         platformManagerData.setX10(cdmManager.getQt());
-        platformManagerData.setX11(cdmManager.getXgyxjb());
+        platformManagerData.setX11(CharacterUtils.charsToString(cdmManager.getXgyxjb()));
         platformManagerData.setX12(cdmManager.getZdyd());
         platformManagerData.setX13(cdmManager.getZgyh());
         platformManagerData.setX14(cdmManager.getZlyz());

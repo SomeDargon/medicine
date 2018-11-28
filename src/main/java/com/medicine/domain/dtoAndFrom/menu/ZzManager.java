@@ -6,6 +6,10 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.beans.BeanUtils;
 
+
+/**
+ * 症状管理
+ */
 @Getter
 @Setter
 public class ZzManager extends SuperManager {

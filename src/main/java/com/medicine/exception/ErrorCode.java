@@ -4,6 +4,7 @@ package com.medicine.exception;
 import com.medicine.util.ErrorMessagePropertiesUtil;
 
 public enum ErrorCode {
+    AUTHORITY_ERROR(403, 1000, "权限不够"),
     INTERNAL_ERROR(500, 1000, "Internal Server Error."), //
     AUTHTOKEN_ERROR(401, 2000, "AuthToken Error or Expired."), //
     CAPTCHA_ERROR(400, 2010, "CAPTCHA ERROR."), //
@@ -60,7 +61,7 @@ public enum ErrorCode {
     ID_CARD_NUMBER_ERROR(400, 3007, "Id card number is null or error."), //
     EMAIL_FORMAT_ERROR(400, 3011, "Email format is error."), //
     BIRTHDAY_ERROR(400, 3013, "Birthday is null or error."), //
-    ACCOUNT_NAME_USED(400, 3014, "Account name has been used."), //
+    ACCOUNT_NAME_USED(401, 3014, "Account name has been used."), //
     GENDER_ERROR(400, 3015, "Gender is null or error."), //
     CITY_ID_ERROR(400, 3016, "City iD is null or error."), //
     SAFE_QUESTION_NULL(400, 3024, "Safe question is null."), //

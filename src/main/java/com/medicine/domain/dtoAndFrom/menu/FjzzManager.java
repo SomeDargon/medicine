@@ -6,6 +6,10 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.beans.BeanUtils;
 
+
+/**
+ * 方剂主治管理
+ */
 @Getter
 @Setter
 public class FjzzManager extends SuperManager {

@@ -11,6 +11,8 @@ import org.springframework.beans.BeanUtils;
 @ApiModel(value = "其他信息")
 public class OrtherFrom {
 
+    private Long id;
+
     @ApiModelProperty(value = "中医效果评价")
     private String zylxpj;
 

@@ -19,11 +19,11 @@ public class WesternMedicine extends BaseEntity {
 
     private String name;
 
-    @OneToMany(mappedBy = "western", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "western", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Image> img;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "dOfWe_id")
+    @JoinColumn(name = "d_of_we_id")
     private DiagnosisOfWe dOfWe;
 
 }

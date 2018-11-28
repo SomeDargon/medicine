@@ -1,5 +1,6 @@
 package com.medicine.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 //import org.springframework.security.core.GrantedAuthority;
 //import org.springframework.security.core.userdetails.UserDetails;
@@ -36,10 +37,12 @@ public class User extends BaseEntity  {
 
     public User() {}
 
-    public User (String userName, String password, String account) {
-        this.userName = password;
-        this.password = userName;
+    public User (Long id, String userName, String account, Long roleId, String password) {
+        super.setId(id);
+        this.userName = userName;
         this.account = account;
+        this.password = password;
+        this.setRoleId(roleId);
     }
 
     public String getUserName() {

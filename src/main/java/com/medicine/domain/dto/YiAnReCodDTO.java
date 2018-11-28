@@ -1,5 +1,6 @@
 package com.medicine.domain.dto;
 
+
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.medicine.domain.dto.attiendRecode.DiagnosisOfWeDTO;
 import com.medicine.domain.dto.attiendRecode.DiagnosisOfZhDTO;
@@ -68,9 +69,12 @@ public class YiAnReCodDTO {
     // 体重
     private Double weight;
 
-    // TODO
-    private Integer age = 10;
+    private Integer age ;
 
+    // 记录id
+    private Long visitId;
+
+    private String address;
 
 
 

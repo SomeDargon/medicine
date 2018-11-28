@@ -2,6 +2,8 @@ package com.medicine.domain.dto.attiendRecode.diagnosisOfZh;
 
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 public class ZhaiyaoDTO {
     // 症状
@@ -11,5 +13,5 @@ public class ZhaiyaoDTO {
     private String shezheng;
 
     //
-    private String maizhenSel = "1";
+    private String maizhenSel;
 }

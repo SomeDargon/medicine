@@ -12,6 +12,8 @@ import java.util.List;
 @Data
 public class WesternMedicineFrom {
 
+    private Long id;
+
     private String name;
 
     private String text;
@@ -23,7 +25,10 @@ public class WesternMedicineFrom {
     ) {
         WesternMedicine westernMedicine = new WesternMedicine();
         BeanUtils.copyProperties(westernMedicineFrom, westernMedicine);
-        westernMedicine.getImg().forEach(image -> image.setWestern(westernMedicine));
+        westernMedicine.getImg().forEach(image ->{
+            image.setId(null);
+            image.setWestern(westernMedicine);
+        });
         return westernMedicine;
     }
 }

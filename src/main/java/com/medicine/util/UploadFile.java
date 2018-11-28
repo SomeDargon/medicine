@@ -1,7 +1,13 @@
 package com.medicine.util;
 
+import com.medicine.domain.Attachment;
+import com.medicine.domain.attiendRecode.Image;
+import com.medicine.domain.dto.attiendRecode.diagnosisAndtreatment.ImageDTO;
+import com.medicine.service.AttachmentService;
+import com.medicine.service.ImageService;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
@@ -9,9 +15,11 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
+import java.time.Instant;
 import java.time.LocalDate;
+import java.time.ZoneId;
+import java.util.Date;
 
 @Slf4j
 @Data
@@ -24,8 +32,13 @@ public class UploadFile {
     @Value("${web.upload-path}")
     private String filePath;
 
+    @Value("${web.file-path}")
+    private String webFilePath;
 
-    public String uploadImg(MultipartFile file ) throws IllegalStateException, IOException {
+
+    @Autowired
+    private ImageService imageService;
+    public ImageDTO uploadImg(MultipartFile file ) throws IllegalStateException, IOException {
         if (file != null) {// 判断上传的文件是否为空
             String path , type;// 文件路径
             LocalDate localDate = LocalDate.now();
@@ -49,7 +62,13 @@ public class UploadFile {
                     // 转存文件到指定的路径
                     file.transferTo(new File(path));
                     log.info("文件成功上传到指定目录下:" + file);
-                    return imgUrl+trueFileName;
+                    Image image = new Image();
+                    image.setUrl(imgUrl+trueFileName);
+                    image = imageService.save(image);
+                    ImageDTO imageDTO = new ImageDTO();
+                    imageDTO.setUid(image.getId());
+                    imageDTO.setUrl(image.getUrl());
+                    return imageDTO;
                 } else {
                     log.info("不是我们想要的文件类型,请按要求重新上传");
                 }
@@ -60,6 +79,53 @@ public class UploadFile {
             log.info("没有找到相对应的文件");
         }
 
-        return "";
+        return null;
     }
+
+    @Autowired
+    private AttachmentService attachmentService;
+
+    public Attachment uploadFile(MultipartFile file ) throws IllegalStateException, IOException {
+        if (file != null) {// 判断上传的文件是否为空
+            String path , type;// 文件路径
+            LocalDate localDate = LocalDate.now();
+            String imgUrl = "/file/" + localDate + "/";
+            String pathName = filePath + imgUrl;
+            if (!new File(pathName).exists()) {
+                new File(pathName).mkdirs();
+            }
+            String fileName = System.currentTimeMillis() + "_" + file.getOriginalFilename().substring(file.getOriginalFilename().indexOf(".") + 0);// 文件原名称
+            log.info("上传的文件原名称:" + fileName);
+            // 判断文件类型
+            type = fileName.indexOf(".") != -1 ? fileName.substring(fileName.lastIndexOf(".") + 1, fileName.length()) : null;
+            if (type != null) {// 判断文件类型是否为空
+                // 自定义的文件名称
+                String trueFileName = String.valueOf(System.currentTimeMillis()) + fileName;
+                path = pathName + trueFileName;
+                // 转存文件到指定的路径
+                file.transferTo(new File(path));
+                log.info("文件成功上传到指定目录下:" + file);
+                Attachment attachment = new Attachment();
+                ZoneId zone = ZoneId.systemDefault();
+                Instant instant = localDate.atStartOfDay().atZone(zone).toInstant();
+                java.util.Date date = Date.from(instant);
+                attachment.setCreateDate(date);
+                attachment.setFileName(file.getOriginalFilename());
+                attachment.setFilePath(imgUrl+trueFileName);
+                attachment.setFileSize(file.getSize());
+                attachment = attachmentService.save(attachment);
+                return attachment;
+            } else {
+                log.info("文件类型为空");
+            }
+        } else {
+            log.info("没有找到相对应的文件");
+        }
+
+        return null;
+    }
+
+
+
+
 }

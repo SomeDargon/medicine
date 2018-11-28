@@ -1,7 +1,8 @@
 package com.medicine.domain.from.dome;
 
-import com.medicine.domain.attiendRecode.DiagnosisAndtreatment;
+import com.medicine.domain.attiendRecode.DiagnosisAndTreatment;
 import com.medicine.domain.attiendRecode.Medicine;
+import com.medicine.util.CharacterUtils;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -13,17 +14,19 @@ import java.util.List;
 @ApiModel(value = "诊断治疗")
 public class DiagnosisAndtreatmentFrom {
 
+    private Long id;
+
     @ApiModelProperty(value = "中医疾病")
-    private String zyjb;
+    private List<String> zyjb;
 
     @ApiModelProperty(value = "西医疾病")
-    private String xyjb;
+    private List<String> xyjb;
 
     @ApiModelProperty(value = "中医证候")
-    private String zyzh;
+    private List<String> zyzh;
 
     @ApiModelProperty(value = "治则治法")
-    private String zzzf;
+    private List<String> zzzf;
 
     @ApiModelProperty(value = "名称")
     private String zfm;
@@ -50,11 +53,15 @@ public class DiagnosisAndtreatmentFrom {
     private List<MedicineFrom> medicine;
 
 
-    public static DiagnosisAndtreatment
+    public static DiagnosisAndTreatment
     dFromToD(DiagnosisAndtreatmentFrom diagnosisAndtreatmentFrom) {
-       DiagnosisAndtreatment diagnosisAndtreatment =
-                                new DiagnosisAndtreatment();
+       DiagnosisAndTreatment diagnosisAndtreatment =
+                                new DiagnosisAndTreatment();
        BeanUtils.copyProperties(diagnosisAndtreatmentFrom, diagnosisAndtreatment);
+       diagnosisAndtreatment.setZyjb(CharacterUtils.charsToString(diagnosisAndtreatmentFrom.getZyjb()));
+       diagnosisAndtreatment.setXyjb(CharacterUtils.charsToString(diagnosisAndtreatmentFrom.getXyjb()));
+       diagnosisAndtreatment.setZyzh(CharacterUtils.charsToString(diagnosisAndtreatmentFrom.getZyzh()));
+       diagnosisAndtreatment.setZzzf(CharacterUtils.charsToString(diagnosisAndtreatmentFrom.getZzzf()));
        diagnosisAndtreatment.setMedicine(
                MedicineFrom.medicineFormTomedicine(
                        diagnosisAndtreatmentFrom.getMedicine(),

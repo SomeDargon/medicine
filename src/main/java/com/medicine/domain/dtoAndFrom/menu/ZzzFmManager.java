@@ -6,6 +6,10 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.beans.BeanUtils;
 
+
+/**
+ * 治则治法管理
+ */
 @Getter
 @Setter
 public class ZzzFmManager extends SuperManager {

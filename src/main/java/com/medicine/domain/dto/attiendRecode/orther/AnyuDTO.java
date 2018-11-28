@@ -12,4 +12,6 @@ public class AnyuDTO {
 
     // 专家点评
     private String zjdp;
+
+    private String qita;
 }

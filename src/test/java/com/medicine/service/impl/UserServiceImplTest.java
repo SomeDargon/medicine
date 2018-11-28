@@ -29,9 +29,6 @@ public class UserServiceImplTest {
 
     @Test
     public void save() {
-        User user = new User();
-        user.setAccount("xx");
-        user.setUserName("ff");
-        userService.save(user);
+
     }
 }

@@ -13,7 +13,7 @@ import java.util.List;
 @Data
 @Entity
 @Table(name = "diagnosis_and_treatment")
-public class DiagnosisAndtreatment extends BaseEntity {
+public class DiagnosisAndTreatment extends BaseEntity {
 
     // 中医疾病
     private String zyjb;

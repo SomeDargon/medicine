@@ -41,7 +41,15 @@ public class PatientController {
     @PostMapping(value = "/add")
     public JsonResult save(@RequestBody PatientFrom patientFrom) {
         if (patientService.findByPhone(patientFrom.getPhone()).size() > 0 ) {
-            return JsonResult.builder().error("电话号码重复").build();
+            if (patientFrom.getId() != null) {
+               Patient patient = patientService.findById(patientFrom.getId());
+               if (!patient.getPhone().equals(patientFrom.getPhone())) {
+                   return JsonResult.builder().error("电话号码重复").build();
+               }
+            } else {
+                return JsonResult.builder().error("电话号码重复").build();
+            }
+            
         }
         return JsonResult.builder().data(
                 patientService.save(patientFrom).getId()).build();

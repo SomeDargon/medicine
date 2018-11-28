@@ -9,6 +9,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import springfox.documentation.spring.web.json.Json;
 
 @RestController
 @RequestMapping("/apiM/patient")
@@ -31,5 +32,10 @@ public class VisitRecordController {
        return visitRecordService.findById(id);
     }
 
-
+    @ApiOperation(value = "修改成医案记录", notes = "/setYiyan")
+    @GetMapping("/setYiyan")
+    public JsonResult editVisitRecord(@RequestParam(name = "id") Long id) {
+        visitRecordService.setYiyan(id);
+        return JsonResult.builder().data("成功").build();
+    }
 }

@@ -1,5 +1,8 @@
 package com.medicine.web;
 
+import com.medicine.domain.Attachment;
+import com.medicine.domain.dto.AttachDTO;
+import com.medicine.domain.dto.ResponseDTO;
 import com.medicine.util.JsonResult;
 import com.medicine.util.UploadFile;
 import io.swagger.annotations.ApiOperation;
@@ -28,6 +31,14 @@ public class FileUploadController {
         return JsonResult.builder().data(uploadFile.uploadImg(file)).build();
     }
 
+    @ApiOperation(value = "上传文件", notes = "/apiM/upload/uploadFile")
+    @RequestMapping(value = "/uploadFile",method = RequestMethod.POST)
+    @ResponseBody
+    public ResponseDTO uploadFile(@RequestParam("file") MultipartFile file
+    ) throws IllegalStateException, IOException {
+        Attachment attachment = uploadFile.uploadFile(file);
+        return ResponseDTO.convert(attachment);
+    }
 
 
 }

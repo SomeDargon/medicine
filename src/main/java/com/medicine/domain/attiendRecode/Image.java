@@ -4,11 +4,13 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.medicine.domain.BaseEntity;
 import com.medicine.domain.attiendRecode.WesternMedicine;
 import lombok.Data;
+import org.hibernate.annotations.Proxy;
 
 import javax.persistence.*;
 
 @Data
 @Entity
+@Proxy(lazy = false)
 public class Image extends BaseEntity {
 
     private String name;
@@ -17,8 +19,7 @@ public class Image extends BaseEntity {
 
     private String url;
 
-    @ManyToOne(cascade = {CascadeType.MERGE}, fetch = FetchType.LAZY)
+    @ManyToOne( fetch = FetchType.LAZY)
     @JoinColumn(name = "western_id")
-    @JsonIgnore
     private WesternMedicine western;
 }

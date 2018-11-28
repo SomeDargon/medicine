@@ -1,8 +1,8 @@
 package com.medicine.domain.repository.attiendRecode;
 
-import com.medicine.domain.attiendRecode.DiagnosisAndtreatment;
+import com.medicine.domain.attiendRecode.DiagnosisAndTreatment;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface DiagnosisAndtreatmentRepository
-        extends JpaRepository<DiagnosisAndtreatment, Long> {
+        extends JpaRepository<DiagnosisAndTreatment, Long> {
 }

@@ -1,7 +1,7 @@
 package com.medicine.domain.dto;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.medicine.domain.attiendRecode.DiagnosisAndtreatment;
+import com.medicine.domain.VisitRecord;
 import com.medicine.domain.dto.attiendRecode.DiagnosisOfWeDTO;
 import com.medicine.domain.dto.attiendRecode.DiagnosisOfZhDTO;
 import com.medicine.domain.dto.attiendRecode.diagnosisAndtreatment.DiagnosisAndtreatmentDTO;
@@ -9,10 +9,11 @@ import com.medicine.domain.dto.attiendRecode.orther.OrtherDTO;
 import com.medicine.util.Date2LongSerializer;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @Data
-public class VisitRecordDTO {
+public class VisitRecordDTO implements Serializable {
 
     private Long id;
 
@@ -28,6 +29,8 @@ public class VisitRecordDTO {
     private DiagnosisAndtreatmentDTO diagnosisAndtreatment;
 
     private OrtherDTO orther;
+
+
 
 
 }

@@ -2,6 +2,8 @@ package com.medicine.domain.dto.attiendRecode.diagnosisAndtreatment;
 
 import lombok.Data;
 
+import java.util.List;
+
 @Data
 public class ZdyzlDTO {
     // 中医疾病

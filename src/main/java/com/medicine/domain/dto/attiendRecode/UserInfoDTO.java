@@ -1,15 +1,18 @@
 package com.medicine.domain.dto.attiendRecode;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.medicine.domain.Patient;
 import io.swagger.annotations.ApiModel;
 import lombok.Data;
 import org.springframework.beans.BeanUtils;
+import org.springframework.format.annotation.DateTimeFormat;
 
+import java.io.Serializable;
 import java.util.Date;
 
 @ApiModel("患者信息")
 @Data
-public class UserInfoDTO {
+public class UserInfoDTO implements Serializable {
 
     private Long cardId;
 
@@ -31,6 +34,8 @@ public class UserInfoDTO {
     // 出生地
     private String birthplace;
 
+    @JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd")
+    @DateTimeFormat(pattern="yyyy-MM-dd")
     private Date visitTime;
 
     // 邮编
@@ -51,8 +56,11 @@ public class UserInfoDTO {
     // 体重
     private Double weight;
 
-    // TODO
-    private Integer age = 10;
+    private Integer age ;
+
+    private String address;
+
+    private Integer time;
 
     public static UserInfoDTO patientToUserInfo(Patient patient) {
         UserInfoDTO userInfoDTO = new UserInfoDTO();

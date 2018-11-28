@@ -1,10 +1,12 @@
 package com.medicine.domain.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.medicine.util.Date2LongSerializer;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
@@ -41,11 +43,10 @@ public class PatientDTO {
 
     private Double weight;
 
-    @ApiModelProperty(name = "首次就诊时间")
     @JsonSerialize(using = Date2LongSerializer.class)
     private Date date;
 
-    @ApiModelProperty(name = "上一次就诊时间")
+
     @JsonSerialize(using = Date2LongSerializer.class)
     private Date endDate;
 

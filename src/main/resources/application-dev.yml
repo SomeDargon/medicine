@@ -1,15 +1,19 @@
 server:
-  port: 8080
+  port: 8088
   ip: 127.0.0.1
 spring:
+  http:
+    multipart:
+      max-file-size: 30Mb
+      max-request-size: 30Mb
   datasource:
-    url: jdbc:mysql://localhost:3306/myblog?useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:mysql://116.62.201.135:3306/medicine?useUnicode=true&characterEncoding=UTF-8
     username: root
-    password: Liaoxiaolong@123
+    password: 41e7ea6a3a
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
   redis:
     port: 6379
     host: 114.215.68.43
@@ -24,12 +28,20 @@ spring:
     timeout: 10000
   session:
     store-type: redis
+
 web:
-  upload-path:  D:/home/tomcat-8.5.20/webapps
+    upload-path:  D:/home/tomcat-8.5.20/webapps
+    file-path: D:/home/tomcat-8.5.20/webapps/files
+    img-path: D:/home/tomcat-8.5.20/webapps/img/
+    file-dowload: D:/home/tomcat-8.5.20/webapps/file/
+
 
 ########## Mybatis 自身配置 ##########
 mybatis:
+ # 搜索指定包别名
+  typeAliasesPackage: com.medicine.domain
   mapper-locations: classpath:mapper/*Mapper.xml
+  configLocation: classpath:mapper/mybatis-config.xml
   # 驼峰命名规范 如：数据库字段是  order_id 那么 实体字段就要写成 orderId
 #  configuration:
 #  map-underscore-to-camel-case: true
@@ -49,3 +61,7 @@ pagehelper:
     count: countSql
   reasonable: false
   support-methods-arguments: true
+logging:
+  level:
+    com.medicine.domain.mapper: debug
+

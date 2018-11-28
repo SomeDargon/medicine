@@ -21,7 +21,7 @@ public class VisitRecord extends BaseEntity {
     // 诊断治疗
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "diagnosis_treatment_id")
-    private DiagnosisAndtreatment diagnosisAndtreatment;
+    private DiagnosisAndTreatment diagnosisAndtreatment;
 
     // 中医四诊
     @OneToOne(cascade = CascadeType.ALL)

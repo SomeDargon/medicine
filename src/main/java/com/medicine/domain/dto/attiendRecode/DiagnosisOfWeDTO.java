@@ -9,6 +9,8 @@ import lombok.Data;
 @ApiModel("西医")
 public class DiagnosisOfWeDTO {
 
+    private Long id;
+
     private String tigejiancha;
 
     @ApiModelProperty(value = "血常规")

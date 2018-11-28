@@ -6,6 +6,10 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.beans.BeanUtils;
 
+
+/**
+ * 脉诊管理
+ */
 @Getter
 @Setter
 public class MzManager extends SuperManager{

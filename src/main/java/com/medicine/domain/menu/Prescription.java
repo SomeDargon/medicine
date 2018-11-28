@@ -10,9 +10,14 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "prescription")
 public class Prescription extends BaseEntity{
+    // 方剂id
     private Long menuId;
+    // 名称
     private String name;
+    // 用量
     private String yl;
+    // 作用
     private String zy;
+    // 用法
     private String yf;
 }

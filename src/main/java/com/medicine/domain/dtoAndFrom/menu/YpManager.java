@@ -6,6 +6,9 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.beans.BeanUtils;
 
+/**
+ * 饮片管理
+ */
 @Getter
 @Setter
 public class YpManager extends SuperManager {

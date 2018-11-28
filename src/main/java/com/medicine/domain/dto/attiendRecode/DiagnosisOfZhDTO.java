@@ -9,6 +9,8 @@ import lombok.Data;
 @Data
 public class DiagnosisOfZhDTO {
 
+    private Long id;
+
     private AskDTO ask;
 
     private LookDTO look;

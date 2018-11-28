@@ -15,4 +15,5 @@ public interface VisitRecordRepository extends JpaRepository<VisitRecord, Long> 
     Integer maxVisitTimes(Long id);
 
     List<VisitRecord> findByStatusAndPatient(Integer status, Patient patient);
+
 }

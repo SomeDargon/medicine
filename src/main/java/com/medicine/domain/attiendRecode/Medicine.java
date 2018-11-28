@@ -1,5 +1,6 @@
 package com.medicine.domain.attiendRecode;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.medicine.domain.BaseEntity;
 import lombok.Data;
 
@@ -19,14 +20,15 @@ public class Medicine extends BaseEntity {
     // 类型
     private String liang;
 
-    // 剂数
+    // 作用
     private String zhuyong;
 
-    // 医师
+    // 用法
     private String yongfa;
 
-    @ManyToOne( fetch = FetchType.LAZY)
+    @ManyToOne( fetch = FetchType.EAGER)
     @JoinColumn(name = "dat_id")
-    private DiagnosisAndtreatment dat;
+    @JsonSerialize
+    private DiagnosisAndTreatment dat;
 
 }

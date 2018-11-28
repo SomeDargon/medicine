@@ -6,6 +6,10 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.beans.BeanUtils;
 
+
+/**
+ * 功效类型管理
+ */
 @Getter
 @Setter
 public class GxlxManager extends SuperManager {

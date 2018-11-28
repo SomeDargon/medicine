@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.Example;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
@@ -35,14 +36,16 @@ public class PlatformManagerDataRepositoryTest {
         platformManagerDataRepository.save(data);
     }
 
-    @Test
-    public void find() {
-        List<PlatformManager> platformManagers = platformManagerRepository.findAll();
-        platformManagers.forEach(e->{
-            PlatformManagerData data = platformManagerDataRepository.getOne(e.getId());
-
-        });
-
-    }
+//    @Test
+//    public void find() {
+//        List<PlatformManager> platformManagers = platformManagerRepository.findAll();
+//        platformManagers.forEach(e->{
+//            PlatformManager p = new PlatformManager();
+//            p.setId(e.getId());
+//            PlatformManagerData data = platformManagerDataRepository.findOne(Example.of(p)).get();
+//
+//        });
+//
+//    }
 
 }

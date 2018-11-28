@@ -1,14 +1,19 @@
 package com.medicine.domain.from.dome;
 
 import com.medicine.domain.attiendRecode.DiagnosisOfZh;
+import com.medicine.util.CharacterUtils;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import org.springframework.beans.BeanUtils;
 
+import java.util.List;
+
 @Data
 @ApiModel(value = "中医四诊")
 public class DiagnosisOfZhFrom {
+
+    private Long id;
 
     @ApiModelProperty(value = "主诉")
     private String zusu;
@@ -65,17 +70,20 @@ public class DiagnosisOfZhFrom {
     private String qita;
 
     @ApiModelProperty(value = "症状")
-    private String zhenzhuang;
+    private List<String> zhenzhuang;
 
     @ApiModelProperty(value = "舌诊")
-    private String shezheng;
+    private List<String> shezheng;
 
     @ApiModelProperty(value = "脉诊外键")
-    private String  maizhenSel;
+    private List<String>  maizhenSel;
 
     public static DiagnosisOfZh dZhFromToD(DiagnosisOfZhFrom diagnosisOfZhFrom) {
         DiagnosisOfZh diagnosisOfZh = new DiagnosisOfZh();
         BeanUtils.copyProperties(diagnosisOfZhFrom, diagnosisOfZh);
+        diagnosisOfZh.setZhenzhuang(CharacterUtils.charsToString(diagnosisOfZhFrom.getZhenzhuang()));
+        diagnosisOfZh.setShezheng(CharacterUtils.charsToString(diagnosisOfZhFrom.getShezheng()));
+        diagnosisOfZh.setMaizhenSel(CharacterUtils.charsToString(diagnosisOfZhFrom.getMaizhenSel()));
         diagnosisOfZh.setWesternMedicine(
                 WesternMedicineFrom.westerFromToWester(
                         diagnosisOfZhFrom.getShezhenimg()

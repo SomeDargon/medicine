@@ -74,6 +74,13 @@ public class JsonResult<T> {
             return this;
         }
 
+        public JsonResultBuilder error(String error, Integer status) {
+            this.error = error;
+            this.success = false;
+            this.status = status;
+            return this;
+        }
+
         public JsonResultBuilder data(T data) {
             this.data = data;
             this.success = true;

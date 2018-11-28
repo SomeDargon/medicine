@@ -1,31 +1,27 @@
 package com.medicine.web;
 
 
-import com.alibaba.fastjson.JSON;
+import com.github.pagehelper.PageHelper;
 import com.medicine.domain.Dictionary;
-import com.medicine.domain.dto.PatientDTO;
 import com.medicine.domain.dto.PatientRecodDTO;
 import com.medicine.domain.dto.YiAnReCodDTO;
-import com.medicine.domain.dtoAndFrom.menu.CdmManager;
-import com.medicine.domain.dtoAndFrom.menu.SuperManager;
+import com.medicine.domain.from.YiAnForm;
 import com.medicine.domain.menu.ComponentManager;
-import com.medicine.domain.menu.PlatformManager;
-import com.medicine.domain.menu.PlatformManagerData;
+import com.medicine.domain.page.PageDomain;
 import com.medicine.service.ComponentManagerService;
 import com.medicine.service.DictionaryService;
 import com.medicine.service.PlatformManagerService;
 import com.medicine.service.VisitRecordService;
 import com.medicine.util.JsonResult;
+import com.medicine.util.StringUtils;
+import com.medicine.util.TableSupport;
 import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
-import jdk.nashorn.internal.objects.annotations.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -36,7 +32,7 @@ import java.util.Map;
 public class PlatformManagerController {
 
     @Autowired
-    PlatformManagerService platformManagerService;
+    private PlatformManagerService platformManagerService;
     @Autowired
     private DictionaryService dictionaryService;
     @Autowired
@@ -124,11 +120,21 @@ public class PlatformManagerController {
     public Page<YiAnReCodDTO> findPatiendAll(
             @RequestParam(required = false) String name,
             @RequestParam(required = false) String visitDate,
-            @RequestParam(value = "pageSize", required = false, defaultValue = "1") Integer size,
-            @RequestParam(required = false, defaultValue = "10") Integer page
+            @RequestParam(value = "pageSize", required = false, defaultValue = "5") Integer size,
+            @RequestParam(required = false, defaultValue = "1") Integer page
     ) {
         PageRequest pageRequest = PageRequest.of(page-1, size);
         return visitRecordService.findByNameAndVisitDate(pageRequest, name, visitDate);
     }
+
+    @ApiOperation(value = "修改医案", notes = "/save/patiend")
+    @PostMapping("/save/patiend")
+    public JsonResult patiendSave(@RequestBody YiAnForm yiAnForm) {
+
+        visitRecordService.editYianRecode(yiAnForm);
+        return JsonResult.builder().data("成功").build();
+    }
+
+
 
 }

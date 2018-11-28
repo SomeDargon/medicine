@@ -6,6 +6,9 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.beans.BeanUtils;
 
+/**
+ * 西医疾病管理
+ */
 @Getter
 @Setter
 public class WdmManager extends SuperManager {
